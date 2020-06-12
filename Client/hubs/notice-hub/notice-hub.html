@@ -1,0 +1,473 @@
+<div class="notice-hub th-panel" >
+
+    <div id="th-dlg-template-add-notice" class="invisible-item">
+        <div class="th-dlg" >
+
+            <div class="th-dlg-add-notice th-dlg-template green-bkg">
+                <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+                <div class="th-full-title">
+                    <div class="th-dlg-title green-bkg white-frg">
+                        ADD NOTICE
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="th-dlg-content">
+
+                    <div class="th-dlg-image-panel"></div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">FROM:</div>
+                        <span class="th-template-nick th-dlg-value">th-template-nick</span>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">CATEGORY:</div>
+                        <select class="th-dlg-add-notice-category">
+                            <option value="i want" >I want</option>
+                            <option value="i can" >I can</option>
+                        </select>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">COUNTRY:</div>
+                        <select class="th-dlg-add-notice-country">
+                            <option value="everywhere" >everywhere</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="canada" >Canada</option>
+                            <option value="france" >France</option>
+                            <option value="germany" >Germany</option>
+                            <option value="india" >India</option>
+                            <option value="italy" >Italy</option>
+                            <option value="portugal" >Portugal</option>
+                            <option value="russia" >Russia</option>
+                            <option value="spain" >Spain</option>
+                            <option value="usa" >USA</option>
+                        </select>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">CITY:</div>
+                        <input class="th-dlg-add-notice-city" placeholder="exp: San Francisco" type="text">
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">RESPONSE:</div>
+                        <input class="th-dlg-add-notice-response" type="checkbox">
+                        <label>Follow responses of the notice via email</label>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">TITLE:</div>
+                        <textarea class="th-dlg-add-notice-title" placeholder="How you want call this notice? Be specific." maxlength="180"></textarea>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">CONTENT:</div>
+                        <textarea class="th-dlg-add-notice-content" placeholder="What do you want to share?" maxlength="900"></textarea>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">IMAGE:</div>
+                        <textarea class="th-dlg-add-notice-image" placeholder="Do you want to add link to online image?"></textarea>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">TAGS:</div>
+                        <textarea class="th-dlg-add-notice-tags" placeholder="At least one tag as: idea, question, housing, advice"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="th-full-btn">
+                    <hr>
+                    <div class="th-btn-add-notice-post btn-rect btn-rect-dl-white white-frg btn-shadow">POST NOTICE</div>
+                </div>
+
+                <div class="th-notice-progress th-dlg invisible-item">
+                    <div class="th-img-progress-bar"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="th-dlg-template-show-notice" class="invisible-item">
+
+        <script id='notice-item-comment-template' type="text/template">
+            <div class="notice-comment-list-view-item-template">
+                <div class="template-image user-image-male"></div>
+                <div class="template-date"><span class="light-gray-frg">template-date</span></div>
+                <div class="template-data"><span></span></div>
+                <div class="template-nick"><span class="gray-frg">template-nick</span></div>
+                <div class="template-text"><span>template-text</span></div>
+                <div class="template-action light-gray-frg"></div>
+                <hr>
+            </div>
+        </script>
+
+        <div class="th-dlg" >
+
+            <div class="th-dlg-show-notice th-dlg-template">
+
+                <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+                <div class="th-full-title">
+                    <div class="th-dlg-title white-frg">SHOW NOTICE</div>
+                    <hr>
+                </div>
+
+                <div class="th-dlg-content">
+
+                    <div class="th-dlg-image-panel"></div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">CATEGORY:</div>
+                        <div class="th-dlg-show-notice-category th-notice-text">th-dlg-show-notice-category</div>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">FROM:</div>
+                        <div class="th-dlg-show-notice-nick th-notice-text">th-dlg-show-notice-nick</div>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">GENDER:</div>
+                        <div class="th-dlg-show-notice-gender th-notice-text">th-dlg-show-notice-gender</div>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">LANGUAGE:</div>
+                        <div class="th-dlg-show-notice-language th-notice-text">th-dlg-show-notice-language</div>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">COUNTRY:</div>
+                        <div class="th-dlg-show-notice-country th-notice-text">th-dlg-show-notice-country</div>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">CITY:</div>
+                        <div class="th-dlg-show-notice-city th-notice-text">th-dlg-show-notice-city</div>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">TAGS:</div>
+                        <div class="th-dlg-show-notice-tags th-notice-text" >th-dlg-show-notice-tags</div>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name th-notice-title">TITLE:</div>
+                        <div class="th-dlg-show-notice-title th-notice-text">
+                            th-dlg-show-notice-title
+                        </div>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name th-notice-content">CONTENT:</div>
+                        <div class="th-dlg-show-notice-content th-notice-text">
+                            th-dlg-show-notice-content
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="notice-comment-panel invisible-item">
+
+                    <div class="notice-comment-list">
+
+                        <!--<div class="notice-comment-info invisible-item">-->
+                        <div class="notice-comment-info">
+                            <span class="th-glyph li_note" title="profile"></span> <br><br><br>
+                            This notices don`t have comments yet.<br><br><br>
+                            For add new comment use button:<br>
+                            <span>- ADD COMMENT-</span> <br><br><br>
+                            For mail notification use check-box: <br>
+                            <span>- Following comments -</span>
+                        </div>
+
+                        <ul id="notice-comment-list-view-ctrl"></ul>
+
+                    </div>
+
+                </div>
+
+                <div class="th-full-btn green-bkg">
+                    <hr>
+
+                    <ul class="th-notice-show-list-btns">
+                        <li class="th-notice-show-btn">
+                            <div class="th-btn-comment-notice btn-rect btn-rect-dl-white white-frg btn-shadow">COMMENTs</div>
+                        </li>
+                        <li class="th-notice-show-btn">
+                            <div class="th-btn-sms-notice btn-rect btn-rect-dl-white white-frg btn-shadow">SMS</div>
+                        </li>
+                        <li class="th-notice-show-btn">
+                            <div class="th-btn-ban-notice btn-rect btn-rect-dl-white white-frg btn-shadow">BAN</div>
+                        </li>
+                        <li class="th-notice-show-btn">
+                            <div class="th-btn-add-comment-notice btn-rect btn-rect-dl-white white-frg btn-shadow">ADD COMMENT</div>
+                        </li>
+                        <li class="th-notice-show-btn">
+                            <input class="th-dlg-show-follow-notice" type="checkbox">
+                            <label>Following comments</label>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="th-full-footer invisible-item">
+                    <div class="th-dlg-title white-frg">
+                        SHOW STATUS
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="th-dlg-add-comment-to-notice invisible-item">
+                <div class="th-dlg double-dark-green-frg" >
+
+                    <div class="th-dlg-add-notice-comment th-dlg-template green-bkg ">
+                        <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+                        <div class="th-dlg-title dark-green-bkg green-frg">
+                            ADD COMMENT
+                        </div>
+
+                        <div class="th-dlg-content">
+                            <div class="th-dlg-data">
+                                <div class="th-dlg-name">From:</div>
+                                <span class="th-template-nick th-dlg-value">th-template-nick</span>
+                            </div>
+                            <div class="th-dlg-data">
+                                <div class="th-dlg-name">Comment:</div>
+                                <textarea class="th-dlg-notice-comment-text" maxlength="900"></textarea>
+                            </div>
+
+                            <div class="th-dlg-notice-footer green-frg">
+                                <hr>
+                                <div class="th-btn-add-notice-comment btn-rect btn-rect-dl-white white-frg btn-shadow">ADD</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="th-dlg-send-sms-to-notice-owner invisible-item">
+                <div class="th-dlg double-dark-green-frg">
+
+                    <div class="th-dlg-send-notice-sms th-dlg-template green-bkg ">
+                        <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+                        <div class="th-dlg-title dark-green-bkg green-frg">SEND MESSAGE</div>
+
+                        <div class="th-dlg-content">
+                            <div class="th-dlg-data">
+                                <div class="th-dlg-name">From:</div>
+                                <span class="th-template-nick th-dlg-value">th-template-nick</span>
+                            </div>
+                            <div class="th-dlg-data">
+                                <div class="th-dlg-name">Message:</div>
+                                <textarea class="th-dlg-notice-sms-text" placeholder="Type your message here... " maxlength="900"></textarea>
+                            </div>
+
+                            <div class="th-dlg-notice-footer green-frg">
+                                <hr>
+                                <div class="th-btn-send-notice-sms btn-rect btn-rect-dl-white white-frg btn-shadow">SEND</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="th-dlg-add-ban-to-notice invisible-item">
+                <div class="th-dlg double-dark-green-frg" >
+
+                    <div class="th-dlg-send-notice-ban th-dlg-template green-bkg ">
+                        <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+                        <div class="th-dlg-title dark-green-bkg green-frg">
+                            ADD BAN
+                        </div>
+
+                        <div class="th-ban-alert">
+                            Inform the administrator that the notice is
+                            a <span class="th-ban-violation">Violation Of The Publication</span> on the notice-board.
+                            Please, also explain why?
+                        </div>
+
+                        <div class="th-dlg-content">
+                            <div class="th-dlg-data">
+                                <div class="th-dlg-name">From:</div>
+                                <span class="th-template-nick th-dlg-value">th-template-nick</span>
+                            </div>
+                            <div class="th-dlg-data">
+                                <div class="th-dlg-name">Why BAN:</div>
+                                <textarea class="th-dlg-notice-ban-text" maxlength="900"></textarea>
+                            </div>
+
+                            <div class="th-dlg-notice-footer green-frg">
+                                <hr>
+                                <div class="th-btn-ban-to-notice btn-rect btn-rect-dl-white white-frg btn-shadow">BAN</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="th-notice-progress th-dlg invisible-item">
+                <div class="th-img-progress-bar"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script id='notice-item-template' type="text/template">
+
+        <div class="notice-list-view-item-template" >
+
+            <div class="notice-template-content">
+                <div class="template-date gray-frg">
+                    <span>template-date</span>
+                </div>
+
+                <div class="template-notice-img"></div>
+
+                <div class="template-notice-title gray-frg">template-notice-title</div>
+
+                <div class="template-notice-text">template-notice-text</div>
+
+                <div class="template-data"><span></span></div>
+
+                <div class="template-notice-category">template-notice-category</div>
+
+                <div class="template-notice-menu">
+                     <span class="th-glyph li_eye"
+                           data-action="showAboutNoticePanel"
+                           title="About Notice"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </script>
+
+    <div class="th-cover">
+
+        <div class="th-header">
+            <div class="right-side black-frg th-top-menu">
+                <div class="logo-panel th-logo-menu th-box-shadow-menu"></div>
+            </div>
+            <div class='right-side th-common-progress-bar'>
+                <div class="th-img-progress-bar"></div>
+            </div>
+            <div class="th-slide-menu"></div>
+            <div class="drag-panel left-side green-bkg white-frg">notice hub</div>
+            <span id='btn-close-notice-hub' class="btn-circle btn-circle-position btn-circle-green"></span>
+        </div>
+
+        <div class="th-section">
+            <!--<div class="th-notice-filter">-->
+                <!--<a id="th-link-notice-filter" href="#" title="Filter for notices">Region Filter</a>-->
+            <!--</div>-->
+            <div class='light-gray-line-2'></div>
+            <div class='th-title black-frg'>NOTICES</div>
+            <div class='value green-frg'>from friends and another people</div>
+        </div>
+
+        <div class="th-article">
+            <ul class="th-ul-main-menu">
+                <li class="main-menu-items main-menu-refresh"
+                    data-action="readAllNotices"
+                    data-tip="Refresh notices"
+                    title="Refresh notices">
+                </li>
+                <li class="main-menu-items main-menu-notice-item"
+                    data-action="showAddNoticeDlg"
+                    data-tip="Add notice to the board"
+                    title="Add notice to the board">
+                </li>
+            </ul>
+            <div class="th-title green-frg">NOTICES BOARD</div>
+            <div class="sub-title">check what is people looking for</div>
+            <hr>
+        </div>
+
+        <div class="search-notices">
+
+            <div class="th-expander">
+                <span class="th-expander-sign">+</span>
+                <div class="th-expander-hr"></div>
+                <span class="th-expander-text">Search Filter</span>
+            </div>
+
+            <div class="th-expander-region-filter-content">
+                <div class="th-notice-list">
+                    <div class="th-title-status">Country :</div>
+                    <select class="th-select-notice-country">
+                        <option value="everywhere" >everywhere</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="canada" >Canada</option>
+                        <option value="france" >France</option>
+                        <option value="germany" >Germany</option>
+                        <option value="india" >India</option>
+                        <option value="italy" >Italy</option>
+                        <option value="portugal" >Portugal</option>
+                        <option value="russia" >Russia</option>
+                        <option value="spain" >Spain</option>
+                        <option value="usa" >USA</option>
+                    </select>
+                </div>
+
+                <div class="th-notice-list">
+                    <div class="th-title-status">City :</div>
+                    <input id='input-notice-state-city' placeholder="exp: San Francisco"  type="text" />
+                </div>
+                <div class="th-notice-list">
+                    <div class="th-title-status">Category :</div>
+                    <select class="th-select-notice-category">
+                        <option value="all" >all</option>
+                        <option value="i want" >I want</option>
+                        <option value="i can" >I can</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="notice-input-text">
+                <input id='input-search-notices-tags' placeholder="at least one tag such as: idea, question, advice" type="text" />
+                <span class="th-glyph li_search" id="btn-input-search-notices" title="Search Notice"></span>
+            </div>
+
+            <div class="notice-list">
+
+                <hr>
+
+                <ul id='notice-list-view-ctrl' class="black-frg" ></ul>
+
+            </div>
+        </div>
+
+        <div class="th-footer green-bkg">
+            <div class="footer-tool-tip">welcome to notice-hub</div>
+        </div>
+
+        <div class="notice-hub-dlg-feedback invisible-item"></div>
+
+        <div class="notice-hub-dlg-settings invisible-item"></div>
+
+    </div>
+
+</div>

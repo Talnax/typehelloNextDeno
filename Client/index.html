@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Error</title>
+    <script src="lib/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<script>
+    //https://stackoverflow.com/questions/13342466/send-post-request-from-client-to-node-js
+    function runAjax() {
+        try {
+            let req       = 'userLogin';
+            let request = {
+                dbcall:        'db-find',
+                dbcollection:  'users',
+                dbrequest:      { 'name': 'Allison', 'pwd': 'pwd-allison' }
+            };
+
+            let ajaxData = JSON.stringify(request);
+            console.log('ajaxData: ', ajaxData);
+
+            //ajaxCall( pathServer + req, req + '=' + ajaxData, success_call, error_call );
+            ajaxCall( '', req + '=' + ajaxData, success_call, error_call );
+        }
+        catch(err) {
+            console.log('ERROR(): ' + err);
+        }
+    }
+
+
+    // https://www.yogihosting.com/jquery-jsonp-example/
+    // https://stackoverflow.com/questions/47523265/jquery-ajax-no-access-control-allow-origin-header-is-present-on-the-requested
+    function ajaxCall( url, data, success_call, error_call ) {
+        try {
+            /**/
+            $.ajax({
+                type:           'POST',
+                url:            'http://0.0.0.0:1337/createUser',
+                contentType:    "application/json; charset=utf-8",
+                dataType:       "json",
+                data:           JSON.stringify({ 'name': 'Allison!', 'pwd': 'pwd-allison!!!' }),
+                jsonpCallback: '_callback',
+                success:        success_call,
+                error:          error_call
+            });
+        }
+        catch(err) {
+            console.log('ERROR(client-common.ajaxCall())' + err );
+        }
+    }
+
+    function _callback(data) {
+        //  write your code here to loop on json data recieved from server
+        console.log('_callback(data) :', data );
+    }
+
+    function success_call( data, textStatus, jqXHR ) {
+        //console.log('SUCCESS[data, textStatus, jqXHR ]: ', data, textStatus, jqXHR  );
+        console.log('success_call( data, textStatus(*), jqXHR(*) ): ', data  );
+    }
+
+    function error_call ( jqXHR, textStatus, errorThrown ) {
+        console.log('ERROR[jqXHR, textStatus, errorThrown ]: ', jqXHR, textStatus, errorThrown  );
+    }
+
+    /*
+    function ajaxCall( url, data, success_call, error_call ) {
+    try {
+        if( success_call === "undefined" || success_call === null ||
+            error_call   === "undefined" || error_call   === null) {
+            return;
+        }
+
+        thJQ.ajax({
+            url:            url,
+            contentType:    'application/json',
+            scriptCharset:  "utf-8",
+            data:           data,
+            dataType:       "jsonp",
+            success:        success_call,
+            error:          error_call
+        });
+    }
+    catch(err) {
+        console.log('ERROR(client-common.ajaxCall())' + err );
+    }
+}
+
+     */
+
+    runAjax();
+
+</script>
+</body>
+
+</html>

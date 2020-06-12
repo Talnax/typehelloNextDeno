@@ -1,0 +1,461 @@
+/*
+ * Author:  Rost Shevtsov ( herclia )
+ * project: TypeHello, 2013
+ * product: Web-Communicator ( TypeHello ) Channel2Channel
+ * file:    login-hub.css
+ */
+
+
+/* ------------------------------------------------------------------------- login-hub */
+
+.login-hub {
+  width: 270px;
+}
+
+.login-hub {
+  .th-cover .light-gray-line-2 {
+    //margin-bottom: 4px;
+    width: 69px;
+  }
+
+  .th-cover .th-section {
+    display: block;
+  }
+}
+
+.login-hub ::-webkit-input-placeholder { /* WebKit browsers */
+  font-size: 11px;
+  font-family: sans-serif!important;
+  color: lightgray !important;
+}
+
+/* --------------------------------------------------------------------------- section */
+
+#http-login-respond {
+  margin-top: -36px;
+  float: right;
+  font-size: 12px;
+  /*line-height: 12px;*/
+  text-align: left;
+  max-height: 27px;
+  overflow-y: hidden;
+}
+
+/* -------------------------------------------------------------------- standard-login */
+
+.login-hub .standard-login {
+  margin: -18px 9px 18px 9px;
+  font-size: 15px;
+}
+
+.login-right-panel {
+  position: relative;
+  display: block;
+  width: 50%;
+  left: 50%;
+}
+
+.login-left-panel {
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: -100%;
+  height: 100%;
+}
+
+.sl-content {
+  padding: 6px;
+}
+
+.login-hub .standard-login aside {
+  background: transparent;
+  //border: none;
+}
+
+.login-hub .standard-login input {
+  border: 1px solid lightgray;
+  height: 21px;
+  border-radius: 3px;
+  width: auto;
+}
+
+.login-hub .standard-login input[type="text"] {
+  float: left;
+  width: 100%;
+  margin-bottom: 2px;
+  font-size: 13px;
+  color: black!important;
+}
+
+.login-hub .standard-login input[type="password"] {
+  margin-bottom: 3px;
+  float: left;
+  width: 100%;
+  font-size: 13px;
+}
+
+.login-hub .standard-login .sl-title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+input[type="checkbox"]#th-login-nick-keep-me-logged-in {
+  height: 12px;
+}
+
+input[type="checkbox"]#th-login-nick-keep-me-logged-in + label {
+  font-size: 10px;
+  display: inline-block;
+  cursor: default;
+  margin-left: 2px;
+}
+
+a#th-link-forgot-password {
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+a#th-link-new-user {
+  font-size: 15px;
+  text-decoration: underline;
+  color: green;
+  //position: absolute;
+  //top: 24px;
+  //left: 9px;
+  left: 11%;
+  bottom: 12%;
+}
+
+.login-hub .th-standard-login .link-pos {
+  display:block;
+  position: inherit;
+}
+
+.sl-content-footer {
+  position:relative;
+  top: 18px;
+  //display: inline;
+}
+
+.sl-content-footer a {
+  display:block;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------- sign-up */
+
+.login-hub .th-sign-up {
+  margin-left: 18px;
+  display: none;
+
+  /*background-color: yellow;*/
+}
+
+.login-hub .th-sign-up .value-sections {
+  margin-bottom: 24px;
+  margin-top: 15px;
+}
+
+.login-hub .th-sign-up .th-article {
+  width: 100%;
+}
+
+.login-hub .th-sign-up .welcome-sign-up {
+
+  /*background-color: yellow;*/
+}
+
+.login-hub .th-sign-up .welcome-sign-up img {
+  width: 45px;
+  float: left;
+  margin-right: 15px;
+}
+
+.login-hub .th-sign-up .welcome-sign-up .welcome-div {
+  margin: 18px auto;
+  width: 80%;
+}
+
+.center-alignment {
+  width: 96%;
+  margin: auto;
+
+  /*background-color: lightcyan;*/
+}
+
+.left-alignment {
+  float: left;
+}
+
+.right-alignment {
+  float: right;
+}
+
+.login-hub .th-sign-up .sign-up-input {
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.login-hub .th-sign-up .su-title {
+  //font-weight: bold;
+  font-size: 10px;
+  text-align: left;
+  margin-top: 11px;
+  width: 30%;
+  text-shadow: 1px 1px #FFFFFF;
+  //color: gray;
+  color: #23a96e;
+  font-weight: bold;
+}
+
+.login-hub .th-sign-up .ttitle {
+  //font-weight: bold;
+  font-size: 10px;
+  margin-bottom: 3px;
+  text-align: left;
+  text-shadow: 1px 1px #FFFFFF;
+  //color: gray;
+  color: #23a96e;
+  font-weight: bold;
+}
+
+.login-hub .th-sign-up input {
+  margin-top: 9px;
+  font-size: 13px;
+  float: inherit;
+  width: 60%;
+}
+
+.login-hub .th-sign-up .lists-values {
+  width: 90%;
+  margin: auto;
+  //height: 111px;
+  display: none;
+}
+
+.login-hub .th-sign-up .sign-up-value-section {
+  text-align: left;
+  height: auto;
+  width: 50%;
+  margin-bottom: 9px;
+}
+
+.login-hub .th-sign-up .sign-up-value-section select {
+  position: relative;
+  width: initial;
+  min-width: initial;
+  font-size: 12px;
+  //margin: 0;
+}
+
+#input-sign-up-birthday {
+  margin-top: -1px;
+  width: 90%;
+}
+
+.login-hub input[type='date'] {
+  width: 78%;
+}
+
+.login-hub .th-sign-up input[type='text'],
+.login-hub .th-sign-up input[type='password'] {
+  height: 18px;
+  border: none;
+  background: transparent !important;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.login-hub .th-sign-up input#input-sign-up-nick:focus,
+input#input-sign-up-password:focus,
+input#input-sign-up-mail:focus,
+input#input-sign-city:focus
+{
+  outline: none  !important;
+  border: none !important;
+  border-bottom: 2px solid gray !important;
+}
+
+#btn-sign-up {
+  width: 60%;
+  margin: 18px auto;
+}
+
+.login-hub .th-sign-up hr {
+  //margin: 0 24px 0 0;
+  //height: 1px;
+  //width: 90%;
+  //border-top:    1px solid rgba(0, 0, 0, 0.1);
+  //border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 96%;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  margin: auto;
+  margin-bottom: 9px;
+}
+
+.login-hub .th-sign-up .th-article hr {
+  //margin: 0 24px 0 0;
+  //height: 1px;
+  //width: 90%;
+  //border-top:    1px solid rgba(0, 0, 0, 0.1);
+  //border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 90%;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  margin: auto;
+  margin-bottom: 9px;
+  margin-left: -1px;
+}
+
+/* --------------------------------------------------------------------------- sign-up */
+
+.sign-up-birth-values {
+  display: block;
+}
+
+.sign-up-birth-values select {
+  float: left;
+  margin-bottom: 3px;
+  width: initial;
+  min-width: initial;
+}
+
+#input-sign-city {
+  margin-top: -3px;
+  width: 78%;
+}
+
+th-standard-login {
+  margin-top: -9px;
+}
+
+.th-input-login,
+.cls-btn-login
+{
+  width: 45%;
+  float: left;
+}
+
+.login-hub .th-input-login input {
+  width: 90%;
+  font-size: 13px;
+  margin-bottom: 3px;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #000 !important;
+  border: 1px solid lightgray;
+  height: 21px;
+  /* border-radius: 3px; */
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  background: transparent  !important;
+  padding: 0;
+}
+
+.login-hub .th-input-login input:focus {
+  border: none !important;
+  border-bottom: 2px solid grey !important;
+  outline: none;
+  box-shadow: none;
+}
+
+.common-input-login {
+  width: 96%;
+  display: inline-block;
+  margin: 6px 0 6px 24px;
+}
+
+.login-hub .sl-title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 10px;
+  text-shadow: 1px 1px #FFFFFF;
+}
+
+.common-btn-login {
+  margin: 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+#th-btn-login {
+  margin: 0 9px 0 0;
+}
+
+#th-btn-new-user {
+  padding: 6px 3px;
+  text-align: center;
+  font-size: 9px;
+  font-weight: bold;
+  border: 1px solid gray;
+  width: 69%;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.login-hub select {
+  position: relative;
+  width: initial;
+  min-width: initial;
+  font-size: 12px;
+  margin: 3px 0;
+  color: black !important;
+}
+
+.login-hub .th-sign-up .th-terms-panel {
+  width: 83%;
+  text-align: center;
+  margin-left: 4%;
+
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.login-hub .th-sign-up .th-terms-panel a {
+  color: green;
+  text-decoration: underline;
+}
+
+.login-hub .value-sections .sign-up-input select {
+  margin: 9px 0 9px 0;
+}
+
+.login-hub .th-sign-up .th-terms-panel .th-terms-link {
+  display: block;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.login-hub .th-sign-up .th-terms-panel .th-terms-link a {
+  display: block;
+  word-spacing: 3px;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+#pin-list-view-ctrl .th-user-actions .th-glyph {
+  color: gray;
+  font: 14px;
+  text-shadow: 1px 1px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

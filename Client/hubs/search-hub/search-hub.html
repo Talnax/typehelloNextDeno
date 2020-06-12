@@ -1,0 +1,161 @@
+<div class="search-hub th-panel">
+
+    <script id='search-item-template' type="text/template">
+
+        <div class="search-list-view-item-template">
+
+            <aside>
+                <div class="template-image user-image-male"></div>
+            </aside>
+
+            <div class="template-date">
+                <span class="light-gray-frg">template-date</span>
+            </div>
+
+            <div class="template-data"><span></span></div>
+
+            <div class="template-nick gray-frg">
+                <span>Herclia</span>
+            </div>
+
+            <div class="template-text">
+                <span>
+                    Jony, USA, English, Male, 15/9/1963
+                </span>
+            </div>
+
+            <div class="template-action light-gray-frg">
+                <span>Action</span>
+                <ul class="th-user-actions gray-frg">
+                    <li><span class="th-glyph li_pen"
+                              data-action="sms"
+                              data-action-dlg="showSmsDlg"
+                              data-template-dlg="search-hub-dlg-sms"
+                              title="Send Message"></span></li>
+
+                    <li><span class="th-glyph li_note"
+                              data-action="profile"
+                              data-action-dlg="showProfileDlg"
+                              data-template-dlg="search-hub-dlg-profile"
+                              title="Profile"></span></li>
+
+                    <li><span class="th-glyph li_user"
+                              data-action="friends"
+                              data-action-dlg="showMakePersonAsDlg"
+                              data-template-dlg="search-hub-dlg-make-person-as"
+                              title="Make Person as..."></span></li>
+                </ul>
+            </div>
+
+            <hr>
+
+        </div>
+
+    </script>
+
+    <div class="th-cover">
+
+        <div class="th-header">
+            <div class="right-side black-frg th-top-menu">
+                <div class="logo-panel th-logo-menu th-box-shadow-menu"></div>
+            </div>
+            <div class='right-side th-common-progress-bar'>
+                <div class="th-img-progress-bar"></div>
+            </div>
+            <div class="th-slide-menu"></div>
+            <div class="drag-panel left-side green-bkg white-frg">search hub</div>
+            <span id='btn-close-search-hub' class="btn-circle btn-circle-position btn-circle-green"></span>
+        </div>
+
+        <div class="th-section">
+            <div class='light-gray-line-2'></div>
+            <div class='th-title black-frg'>SEARCH</div>
+            <div class='value green-frg'>For friends...</div>
+        </div>
+
+        <div class="th-article">
+            <ul class="th-ul-main-menu">
+                <li class="main-menu-items main-menu-channel-filter"
+                    data-action='DlgPerFilter'
+                    data-dlg='search-hub-dlg-per-filter'
+                    data-tip="Filter: What kind of people you are looking for?"
+                    title="Filter properties"></li>
+            </ul>
+            <div class="light-gray-line-2"></div>
+            <div class="th-title">SEARCH</div>
+            <div class="sub-title">for people of your interests and hobbies</div>
+            <hr>
+        </div>
+
+        <div class="search-hub-content">
+
+            <div class="search-hub-search-panel">
+                <select class="radar-type">
+                    <option value="all_people">Search for People</option>
+                    <option value="all_content">Search for Content</option>
+                </select>
+                <input id="input-search-panel" type="text" placeholder="Search for nick, country, hobbies ...">
+                <span class="th-glyph li_search" id="btn-input-search-panel" title="People search"></span>
+                <hr>
+            </div>
+
+            <div class="radar-content">
+
+                <div class="radar-element">
+
+                    <div class='radar-line-1'>
+                        <div class='radar-line-2'>
+                            <div class='radar-line-3'>
+                                <div class='radar-vertical-line '></div>
+                                <div class='radar-horizontal-line '></div>
+                                <div class='radar-line-4'>
+                                    <div class='radar-line-5'></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="scanner"></div>
+                </div>
+
+                <div class="radar-ctrls">
+
+                    <div class="radar-data-panel">
+                        <div class="radar-data-text">Location:</div>
+                        <select class="radar-location"></select>
+                    </div>
+
+                    <!--<div id="btn-search-routine" class="btn-rect btn-rect-green green-frg btn-shadow">START</div>-->
+                    <!--<span class="th-glyph li_search" id="btn-search-routine"></span>-->
+                    <span class="th-circle-btn" id="btn-search-routine"></span>
+
+                </div>
+
+            </div>
+
+            <div class="search-list">
+                <hr>
+                <ul id='search-list-view-ctrl' class="black-frg" >
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="search-hub-dlg-per-filter invisible-item"></div>
+
+        <div class="search-hub-dlg-sms invisible-item"></div>
+
+        <div class="search-hub-dlg-profile invisible-item"></div>
+
+        <div class="search-hub-dlg-make-person-as invisible-item"></div>
+
+        <div class="search-hub-dlg-feedback invisible-item"></div>
+
+        <div class="th-footer green-bkg">
+            <div class="footer-tool-tip">welcome to search-hub</div>
+        </div>
+
+        <div class="search-hub-dlg-info invisible-item"></div>
+
+    </div>
+
+</div>

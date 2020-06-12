@@ -1,0 +1,520 @@
+<script id='th-main-menu-template' type="text/template">
+    <ul class="th-slide-menu-ul">
+        <br/>
+
+        <!--<li class="th-slide-menu-separator">-->
+            <!--<hr>-->
+            <!--<span class="th-slide-menu-separator-text">- Analyses</span>-->
+
+            <!--<ul class="th-slide-menu-separator-subset">-->
+                <!--<li class="th-slide-menu-item" data-action='html-analysis' data-tip="Open web-analyses-hub">-->
+                    <!--<span class="th-glyph li_lab" >-->
+                        <!--<span class="th-slide-menu-content">Web Analyses</span>-->
+                    <!--</span>-->
+                <!--</li>-->
+                <!--<li class="th-slide-menu-item" data-action='news' data-tip="Open news-hub">-->
+                    <!--<span class="th-glyph li_world" >-->
+                        <!--<span class="th-slide-menu-content">News Agents</span>-->
+                    <!--</span>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+
+        <li class="th-slide-menu-separator">
+            <hr>
+            <span class="th-slide-menu-separator-text">- Productivity</span>
+
+            <ul class="th-slide-menu-separator-subset">
+                <li class="th-slide-menu-item" data-action='pin' data-tip="Open pin-hub">
+                    <span class="th-glyph li_location" >
+                        <span class="th-slide-menu-content">Pins</span>
+                    </span>
+                </li>
+                <li class="th-slide-menu-item" data-action='comment' data-tip="Open comment-hub">
+                    <span class="th-glyph li_megaphone">
+                        <span class="th-slide-menu-content">Comments</span>
+                    </span>
+                </li>
+                <li class="th-slide-menu-item" data-action='notes' data-tip="Open note-hub">
+                    <span class="th-glyph li_note" >
+                        <span class="th-slide-menu-content">Notes</span>
+                    </span>
+                </li>
+            </ul>
+        </li>
+
+        <!--<li class="th-slide-menu-separator">-->
+            <!--<hr>-->
+            <!--<span class="th-slide-menu-separator-text">- Communicate</span>-->
+
+            <!--<ul class="th-slide-menu-separator-subset">-->
+                <!--<li class="th-slide-menu-item" data-action='talk'  data-tip="Open talk-hub">-->
+                    <!--<span class="th-glyph li_bubble">-->
+                        <!--<span class="th-slide-menu-content">Chat</span>-->
+                    <!--</span>-->
+                <!--</li>-->
+                <!--<li class="th-slide-menu-item" data-action='sms' data-tip="Open sms-hub">-->
+                    <!--<span class="th-glyph li_pen">-->
+                        <!--<span class="th-slide-menu-content">Message</span>-->
+                    <!--</span>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+
+        <li class="th-slide-menu-separator">
+            <hr>
+            <span class="th-slide-menu-separator-text">- Social</span>
+
+            <ul class="th-slide-menu-separator-subset">
+                <!--<li class="th-slide-menu-item" data-action='friends' data-tip="Open persons-hub">-->
+                    <!--<span class="th-glyph li_user">-->
+                        <!--<span class="th-slide-menu-content">Persons</span>-->
+                    <!--</span>-->
+                <!--</li>-->
+                <li class="th-slide-menu-item" data-action='talk'  data-tip="Open talk-hub">
+                    <span class="th-glyph li_bubble">
+                        <span class="th-slide-menu-content">Chat</span>
+                    </span>
+                </li>
+                <li class="th-slide-menu-item" data-action='sms' data-tip="Open sms-hub">
+                    <span class="th-glyph li_pen">
+                        <span class="th-slide-menu-content">Message</span>
+                    </span>
+                </li>
+                <li class="th-slide-menu-item" data-action='wall' data-tip="Open wall-hub">
+                    <span class="th-glyph li_news">
+                        <span class="th-slide-menu-content">Wall</span>
+                    </span>
+                </li>
+            </ul>
+        </li>
+
+
+        <li class="th-slide-menu-separator">
+            <hr>
+            <span class="th-slide-menu-separator-text">- Common</span>
+
+            <ul class="th-slide-menu-separator-subset">
+                <li class="th-slide-menu-item" data-action='search' data-tip="Open search-hub">
+                    <span class="th-glyph li_search">
+                        <span class="th-slide-menu-content">Search</span>
+                    </span>
+                </li>
+                <li class="th-slide-menu-item" data-action='profile' data-tip="Open profile-hub">
+                    <span class="th-glyph li_photo">
+                        <span class="th-slide-menu-content">Profile</span>
+                    </span>
+                </li>
+                <li class="th-slide-menu-item" data-action='feedback' data-tip="Send user feedback">
+                    <span class="th-glyph li_paperplane">
+                        <span class="th-slide-menu-content">Feedback</span>
+                    </span>
+                </li>
+            </ul>
+        </li>
+
+        <br/>
+    </ul>
+</script>
+
+<script id='th-dlg-template-settings' type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-settings  th-dlg-template green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                SETTINGS DIALOG
+            </div>
+
+            <div class="th-dlg-content">
+
+                <div class="th-expander-panel">
+                    <span id="btn-expander-start-hubs" class="btn-circle-15 btn-circle-position-15 btn-circle-gray"></span>
+                    <div class="th-expander-title">
+                        <div class="th-title">starting service</div>
+                        <div class="sub-title">when service start show hubs:</div>
+                    </div>
+                    <div class="th-setting-start-hubs">
+                        <hr>
+
+                        <!--<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>-->
+
+                        <div class="th-expander-value">
+                            <input class="th-value-hub" type="checkbox" value="notes-hub">
+                            <label>Notes</label>
+                        </div>
+
+                        <div class="th-expander-value">
+                            <input class="th-value-hub" type="checkbox" value="comments-hub">
+                            <label>Comments</label>
+                        </div>
+
+                        <div class="th-expander-value">
+                            <input class="th-value-hub" type="checkbox" value="pins-hub">
+                            <label>Pins</label>
+                        </div>
+
+                        <div class="th-expander-value">
+                            <input class="th-value-hub" type="checkbox" value="wall-hub">
+                            <label>Wall</label>
+                        </div>
+
+                        <div class="th-expander-value">
+                            <input class="th-value-hub" type="checkbox" value="sms-hub">
+                            <label>SMS</label>
+                        </div>
+
+                        <div class="th-expander-value">
+                            <input class="th-value-hub" type="checkbox" value="notices-hub">
+                            <label>Notices</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="th-dlg-footer green-frg">
+                <hr>
+                <ul>
+                    <li>
+                        <div class="th-btn-update-settings btn-rect btn-rect-dl-white white-frg btn-shadow">UPDATE</div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</script>
+
+<script id='th-dlg-template-profile' type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-profile  th-dlg-template green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                FULL PROFILE
+            </div>
+
+            <div class="th-dlg-content">
+                <div class="prf-picture"></div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Nick:</div>
+                    <span class="prf-nick th-dlg-value">prf-nick</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Language:</div>
+                    <span class="prf-lng th-dlg-value">prf-lng</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Country:</div>
+                    <span class="prf-country th-dlg-value">prf-country</span>
+                </div>
+                <!--<div class="th-dlg-data">-->
+                    <!--<div class="th-dlg-name">BIRTHDAY:</div>-->
+                    <!--<span class="prf-birth th-dlg-value">1968-11-25</span>-->
+                <!--</div>-->
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Gender:</div>
+                    <span class="prf-gender th-dlg-value">prf-gender</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">City:</div>
+                    <span class="prf-city th-dlg-value">prf-city</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Interests:</div>
+                    <span class="prf-interests th-dlg-value">prf-interests</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Hobbies:</div>
+                    <span class="prf-hobbies th-dlg-value">prf-hobbies</span>
+                </div>
+
+                <!--
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">About Me:</div>
+                    <span class="prf-about-me th-dlg-value">just about me </span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Profession:</div>
+                    <span class="prf-profession th-dlg-value">Soft Dev</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Expertise:</div>
+                    <span class="prf-expertise th-dlg-value">...</span>
+                </div>
+                -->
+            </div>
+
+        </div>
+
+    </div>
+
+</script>
+
+<script id='th-dlg-template-sms' type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-sms th-dlg-template green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                SEND MESSAGE
+            </div>
+
+            <div class="th-dlg-content">
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">To:</div>
+                    <span class="th-template-nick th-dlg-value">rost</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Message:</div>
+                    <textarea class="th-dlg-sms-text" placeholder="Type your message here..." maxlength="900"></textarea>
+                </div>
+                <!--<div class="th-btn-send-sms btn-rect btn-rect-dl-white white-frg btn-shadow">SEND</div>-->
+            </div>
+
+            <div class="th-dlg-footer green-frg">
+                <hr>
+                <ul>
+                    <li>
+                        <div class="th-btn-send-sms btn-rect btn-rect-dl-white white-frg btn-shadow">SEND</div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</script>
+
+<script id='th-dlg-template-ignore' type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-ignore  th-dlg-template green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                IGNORE PERSON
+            </div>
+
+            <div class="th-dlg-content">
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Nick:</div>
+                    <span class="th-template-nick th-dlg-value">rost</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">???</div>
+                    <!--<span class="th-dlg-value">Are you sure?</span>-->
+                     <span class="th-dlg-value">Really? Ignore this person?</span>
+                </div>
+                <div class="th-btn-ignore btn-rect btn-rect-dl-white white-frg btn-shadow">IGNORE</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</script>
+
+<script id='th-dlg-template-make-person-as' type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-make-person-as  th-dlg-template green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                MAKE PERSON AS...
+            </div>
+
+            <div class="th-dlg-content">
+
+                <div class="th-dlg-message-box"></div>
+
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Person:</div>
+                    <span class='th-template-nick th-dlg-value'>Herclia</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Make As:</div>
+                    <select class="th-dlg-person-status">
+                    </select>
+                </div>
+
+                <!--<div class="btn-make-person-as btn-rect btn-rect-dl-white white-frg btn-shadow">MAKE</div>-->
+
+            </div>
+
+            <div class="th-dlg-footer green-frg">
+                <hr>
+                <ul>
+                    <li>
+                        <div class="btn-make-person-as btn-rect btn-rect-dl-white white-frg btn-shadow">MAKE</div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</script>
+
+<script id='th-dlg-template-per-theme' type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-per-theme  th-dlg-template green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                CHANNEL BY TOPIC
+            </div>
+
+            <div class="th-dlg-content">
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">CHANNEL:</div>
+                    <input class="th-dlg-channel-per-theme-text" placeholder=" What do you want to talk about?" />
+                </div>
+                <div class="th-btn-open-channel-per-theme btn-rect btn-rect-dl-white white-frg btn-shadow">CREATE</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</script>
+
+<script id='th-dlg-template-per-filter' type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-per-filter  th-dlg-template green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                FILTER
+            </div>
+
+            <div class="th-dlg-content">
+
+                <div class="th-dlg-message-box"></div>
+
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Nick:</div>
+                    <input class="th-dlg-filter-nick search-filter-value" placeholder="-" />
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Gender:</div>
+                    <select class="th-dlg-filter-gender search-filter-value">
+                        <option value="-" >-</option>
+                        <option value="male" >male</option>
+                        <option value="female" >female</option>
+                    </select>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Country:</div>
+                    <select class="th-dlg-filter-country search-filter-value">
+                        <option value="-" >-</option>
+                        <option value="USA" >usa</option>
+                        <option value="Russia" >russia</option>
+                        <option value="Canada" >canada</option>
+                        <option value="France" >france</option>
+                        <option value="Spain" >spain</option>
+                        <option value="Italy" >italy</option>
+                    </select>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Language:</div>
+                    <select class="th-dlg-filter-language search-filter-value">
+                        <option value="-" >-</option>
+                        <option value="English" >english</option>
+                        <option value="Russian" >russian</option>
+                        <option value="French" >french</option>
+                        <option value="Spanish" >spanish</option>
+                        <option value="Italian" >italian</option>
+                    </select>
+                </div>
+                <div class="btn-per-filter btn-rect btn-rect-dl-white white-frg btn-shadow">SET FILTER</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</script>
+
+<script id='th-dlg-template-feedback' type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-feedback  th-dlg-template green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                SEND FEEDBACK
+            </div>
+
+            <div class="th-dlg-content">
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">From:</div>
+                    <span class="th-template-nick th-dlg-value">rost</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Feedback:</div>
+                    <textarea class="th-dlg-feedback-text" placeholder="Please, share with us your recommendation, issue or bugs" maxlength="600"></textarea>
+                </div>
+                <!--<div class="th-btn-send-feedback btn-rect btn-rect-dl-white white-frg btn-shadow">SEND</div>-->
+            </div>
+
+            <div class="th-dlg-footer green-frg">
+                <hr>
+                <ul>
+                    <li>
+                        <div class="th-btn-send-feedback btn-rect btn-rect-dl-white white-frg btn-shadow">SEND</div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</script>
+
+<script id='th-dlg-template-info' type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-info  th-dlg-template green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                INFO DIALOG
+            </div>
+
+            <div class="th-dlg-content">
+                <div class="th-dlg-data">
+                    <span class="th-template-info">Info...</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</script>
+

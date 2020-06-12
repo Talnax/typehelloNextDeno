@@ -1,0 +1,349 @@
+/*
+ * Author:  Rost Shevtsov ( herclia )
+ * project: TypeHello, 2013
+ * product: Web-Communicator ( TypeHello ) Channel2Channel
+ * file:    pin-hub.scss
+ */
+
+/* -------------------------------------------------------------------------- talk-hub */
+
+.pin-hub {
+  width:  330px;
+  position: fixed;
+}
+
+.pin-hub {
+  .light-gray-line-2 {
+    width: 27px;
+  }
+
+  .th-circle-btn {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .th-circle-btn:after {
+    content: "\e009";
+  }
+
+  #btn-input-search-pins  {
+    float: left;
+    font-size: 15px;
+    margin-top: -3px;
+    margin-left: 9px;
+
+    &:hover {
+      cursor: pointer;
+      color: black;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+    }
+  }
+}
+
+/* ----------------------------------------------------------------------- pin-list */
+
+.pin-hub .pin-list {
+  margin: 0 0 18px 9px;
+  font-size: 100%;
+  //max-height: 360px;
+}
+
+/* ------------------------------------------------------------- pin-list-view-ctrl */
+
+#pin-list-view-ctrl {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 630px;
+  padding: 0 9px;
+}
+
+#pin-list-view-ctrl li {
+  background: none;
+}
+
+/* ---------------------------------------------------- pin-list-view-item-template */
+
+#pin-list-view-ctrl .pin-list-view-item-template {
+  //position: relative;
+  //left: 1%;
+  //top: 15px;
+  width: 96%;
+  text-align: left;
+  margin-bottom: 18px;
+  margin-left: 3%;
+  //float: right;
+}
+
+#pin-list-view-ctrl .pin-list-view-item-template .th-user-actions .th-glyph  {
+  //font-size: 18px;
+  color: gray;
+  text-shadow: 1px 1px white;
+}
+
+#pin-list-view-ctrl .template-date span {
+  position: relative;
+  float: right;
+  font-size: 9px;
+  right: 9px;
+  top: -9px;
+}
+
+
+#pin-list-view-ctrl .template-nick {
+  margin-top: 11px;
+  font-size: 18px;
+  font-weight: bold;
+  word-wrap: break-word;
+  min-height: 24px;
+}
+
+#pin-list-view-ctrl .template-nick span {
+  position: relative;
+  top: 3px;
+  left: 9px;
+}
+
+#pin-list-view-ctrl .template-image {
+  width: 27px;
+  height: 27px;
+  float: left;
+}
+
+#pin-list-view-ctrl .template-pic {
+  width: 100%;
+  float: left;
+}
+
+#pin-list-view-ctrl .template-pic img {
+  //height: auto;
+  //width: 96%;
+  //margin-top: 9px;
+  //margin-bottom: 11px;
+  height: auto;
+  width: auto;
+  margin-top: 9px;
+  max-width: 96%;
+  margin-bottom: 11px;
+}
+
+
+#pin-list-view-ctrl .template-favicon {
+  float: left;
+  //margin-top: 15px;
+}
+
+#pin-list-view-ctrl .template-favicon img {
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+
+
+#pin-list-view-ctrl .pin-list-view-item-pin-template {
+  position: relative;
+  width: 78%;
+  left: 18%;
+  text-align: left;
+  clear: both;
+  top: 3px;
+}
+
+#pin-list-view-ctrl .pin-list-view-item-pin-template {
+  clear: both;
+}
+
+#pin-list-view-ctrl .pin-list-view-item-pin-template aside {
+  position: absolute;
+  display: block;
+  width: 27%;
+  height: 100%;
+  background: transparent;
+}
+
+#pin-list-view-ctrl .pin-list-view-item-pin-template .template-image {
+  width: 27px;
+  height: 27px;
+  margin: auto;
+}
+
+#pin-list-view-ctrl .pin-list-view-item-pin-template .template-nick {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 27px;
+}
+
+#pin-list-view-ctrl .template-title {
+  margin-top: 15px;
+  //font-size: 15px;
+  font-weight: 100;
+  word-wrap: break-word;
+}
+
+#pin-list-view-ctrl .template-title span {
+  position: relative;
+  left: 9px;
+  font-size: 13px;
+  //top: 6px;
+  display: table;
+  font-weight: bold;
+}
+
+#pin-list-view-ctrl .template-text {
+  margin-top: 15px;
+  margin-right: 9px;
+  font-size: 12px;
+  word-wrap: break-word;
+}
+
+#pin-list-view-ctrl .template-link {
+  margin-top: 6px;
+  font-size: 12px;
+  width: inherit;
+  word-wrap: break-word;
+}
+
+#pin-list-view-ctrl .template-link a {
+  color: #4682B4;
+}
+
+#pin-list-view-ctrl .template-text span {
+  color: black!important;
+}
+
+#pin-list-view-ctrl .template-action {
+  margin-top: 9px;
+  margin-right: 9px;
+  //margin-left: 33px;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+#pin-list-view-ctrl .template-action .th-user-actions {
+  position: relative;
+  //top: -9px;
+  top: -6px;
+  float: right;
+  opacity: 0.0;
+  cursor: pointer;
+}
+
+
+#pin-list-view-ctrl .template-action .th-user-actions li {
+  float: left;
+  margin-left: 6px;
+  margin-top: -3px;
+}
+
+#pin-list-view-ctrl hr {
+  position: relative;
+  border-top:    1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  //left: 33px;
+  //width: calc(100% - 33px);
+  //width: 99%;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.pin-hub .search-pins {
+  position: relative;
+  width: 90%;
+  margin: 18px auto;
+  min-height: 36px;
+}
+
+#input-search-pins {
+  width: 78%;
+  margin-right: 9px;
+  border: 1px solid #23a96e;
+  height: 24px;
+  border-radius: 3px;
+  float: left;
+  padding: 0 0 0 3px;
+  font-size: 13px;
+  background: #23a96e !important;
+  box-shadow: 1px 1px 9px rgba(0,0,0,0.6) !important;
+}
+
+#input-search-pins:focus {
+  outline: none !important;
+  border: 1px solid #5DC396 !important;
+  background: #23a96e !important;
+  border-radius: 3px;
+}
+
+.pin-hub .search-pins .th-glyph {
+  font-size: 21px;
+  //top: 3px;
+}
+
+.pin-hub .search-pins .th-glyph:hover {
+  cursor: pointer;
+}
+
+.pin-hub .search-pins hr {
+  position: relative;
+  border-top:    1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  bottom: -15px;
+  clear: both;
+}
+
+.th-dlg-pin-item .th-dlg-footer hr {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+#pin-list-view-ctrl .th-user-actions .th-glyph {
+  font-size: 18px;
+}
+
+//#pin-list-view-ctrl .template-action span {
+//  position: relative;
+//  top: 6px;
+//}
+
+/* -------------------------------------------------- for small resolution of monitors */
+
+@media screen and (max-height: 900px){
+  .pin-hub {
+    width:  270px;
+  }
+
+  #pin-list-view-ctrl {
+    max-height: 321px;
+  }
+
+  .pin-hub .search-pins .th-glyph {
+    font-size: 18px;
+  }
+
+  #pin-list-view-ctrl .th-user-actions .th-glyph {
+    font-size: 15px;
+  }
+}
+
+
+
+//.pin-hub .th-user-actions .th-glyph {
+//  font-size: 15px;
+//}
+
+//.pin-hub ul.th-ul-main-menu li {
+//  margin-left: 6px;
+//}
+
+/*
+    75% - 100%
+    25% - ???
+    -----------
+    25% * 100% / 75% = 33.33%
+*/
+
+
+/* ----------------------------------------------------------------------------------- */
+
+

@@ -1,0 +1,200 @@
+<div class="news-hub th-panel">
+
+    <script id='th-rss-agent-template-dlg' type="text/template">
+        <li class="list-agent-item">
+            <div class="list-agent-item-section">
+                <span class="title-value">Language:</span>
+                <span class="item-value langs-search">langs-search</span>
+            </div>
+            <!--<div class="list-agent-item-section">-->
+                <!--<span class="title-value">Topics:</span>-->
+                <!--<span class="item-value topics-search">topics-search</span>-->
+            <!--</div>-->
+            <!--<div class="list-agent-item-section">-->
+                <!--<span class="title-value">Title search:</span>-->
+                <!--<span class="item-value title-search">title-search</span>-->
+            <!--</div>-->
+            <div class="list-agent-item-section">
+                <span class="title-value">Search:</span>
+                <span class="item-value body-search">body-search</span>
+            </div>
+            <div class="list-agent-item-section">
+                <span class="title-value">Exclude:</span>
+                <span class="item-value body-exclude">body-exclude</span>
+            </div>
+            <span class="btn-remove-agent-item btn-circle btn-circle-position btn-circle-green invisible-item"></span>
+            <hr>
+        </li>
+    </script>
+
+    <script id='th-short-rss-agent-template' type="text/template">
+        <li class="list-agent-item">
+            <div class="btn-expander">-</div>
+            <div class="list-agent-item-section">
+                <span class="title-value">Search:</span>
+                <span class="item-value body-search">body-search</span>
+            </div>
+            <div class="list-agent-item-section">
+                <span class="title-value titl-exclude">Date:</span>
+                <span class="date-value">date-value</span>
+            </div>
+        </li>
+    </script>
+
+    <div class="th-cover">
+        <div class="block-panel"></div>
+
+        <div class="th-header">
+            <div class="right-side black-frg th-top-menu">
+                <div class="logo-panel th-logo-menu th-box-shadow-menu"></div>
+            </div>
+            <div class='right-side th-common-progress-bar'>
+                <div class="th-img-progress-bar"></div>
+            </div>
+            <div class="th-slide-menu"></div>
+            <div class="drag-panel left-side green-bkg white-frg">news agents hub</div>
+            <span id='btn-close-news-hub' class="btn-circle btn-circle-position btn-circle-green"></span>
+        </div>
+
+        <!--<div class="th-section">-->
+            <!--<div class='light-gray-line-2'></div>-->
+            <!--<div class='th-title black-frg'>NEWS</div>-->
+            <!--<div class='value green-frg'>check what you interesting</div>-->
+        <!--</div>-->
+
+        <div class="th-article">
+            <ul class="th-ul-main-menu">
+                <li class="th-tool-menu-item-green-bkg li_params"
+                    data-action="readSearchAgents"
+                    data-tip="Refresh"
+                    title="Refresh">
+                </li>
+                <li class="th-tool-menu-item-green-bkg li_eye"
+                    data-action="openSearchAgentsDld"
+                    data-template-dlg="news-hub-dlg-rss-item"
+                    data-tip="Add Searcher Agent"
+                    title="Add Searcher Agent">
+                </li>
+            </ul>
+            <div class="light-gray-line-2"></div>
+            <div class="th-title">AGENTs OF NEWs</div>
+            <div class="sub-title">FIND WHAT YOU INTERESTING</div>
+            <hr>
+        </div>
+
+        <div class="news-list">
+
+            <ul id='result-list-view-ctrl' class="black-frg" ></ul>
+
+        </div>
+
+        <div class="th-footer green-bkg">
+            <div class="footer-tool-tip">welcome to news-hub</div>
+        </div>
+
+        <div class="news-hub-dlg-feedback invisible-item"></div>
+
+        <div id="rss-agent-dlg" class="invisible-item">
+            <span id="close-rss-agent-dlg" class="btn-circle btn-circle-position btn-circle-green"></span>
+            <div class="th-dlg-title dark-green-bkg green-frg">SET SEARCH AGENTs</div>
+            <div class="th-dlg-progress-bar th-img-progress-bar"></div>
+
+            <div class="agent-rss-panel">
+                <div class="list-agents-panel">
+                    <div class="rss-agent-expander">
+                        <div id="list-agents-expander" class="btn-expander">-</div>
+                        <div class="search-agent-titles">List of search agents</div>
+                    </div>
+                    <ul id="list-agents-ctrl"></ul>
+                </div>
+
+                <div class="new-agent-panel">
+                    <div class="rss-agent-expander">
+                        <div id="new-agent-expander" class="btn-expander">-</div>
+                        <div class="search-agent-titles">Add new search agents</div>
+                        <hr>
+                    </div>
+
+                    <div class="new-agent-params">
+
+                        <div class="search-languages">
+                            <div class="search-languages-title">Language:</div>
+                            <select class="search-languages-items">
+                                <option value="ru_ru" >russian</option>
+                                <option value="en_us" >english</option>
+                            </select>
+                        </div>
+
+
+                        <div class="search-by-topics">
+                            <div class="topic-title">Search by topic:</div>
+
+                            <div class="where-checkbox column-center">
+                                <input class="check-where-to-search" checked value="world" type="checkbox" >
+                                <label>World</label>
+                            </div>
+
+                            <div class="where-checkbox column-left">
+                                <input class="check-where-to-search" value="business" type="checkbox" >
+                                <label>Business</label>
+                            </div>
+
+                            <div class="where-checkbox column-right">
+                                <input class="check-where-to-search" checked value="politics" type="checkbox" >
+                                <label>Politics</label>
+                            </div>
+
+                            <div class="where-checkbox column-center">
+                                <input class="check-where-to-search" checked value="economics" type="checkbox" >
+                                <label>Economic</label>
+                            </div>
+
+                            <div class="where-checkbox column-left">
+                                <input class="check-where-to-search" value="sport" type="checkbox" >
+                                <label>Sport</label>
+                            </div>
+
+                            <div class="where-checkbox column-right">
+                                <input class="check-where-to-search" value="science" type="checkbox" >
+                                <label>Science</label>
+                            </div>
+
+                            <div class="where-checkbox column-center">
+                                <input class="check-where-to-search" value="hitech" type="checkbox" >
+                                <label>Hi-Tech</label>
+                            </div>
+
+                            <div class="where-checkbox column-left">
+                                <input class="check-where-to-search" value="culture" type="checkbox" >
+                                <label>Culture</label>
+                            </div>
+
+                        </div>
+
+                        <div class="search-in">
+                            <div class="title-search-in">Words, phrase</div>
+                            <!--<div class="search-in-title">-->
+                                <!--<input id='input-agent-news-title'  placeholder="In a Title of News"  type="text" />-->
+                            <!--</div>-->
+                            <div class="search-in-body">
+                                <input id='input-agent-news-body' placeholder="what to SEARCH"   type="text" />
+                            </div>
+                            <!--<div class="search-exclude">-->
+                                <!--<input id='input-agent-exclude' placeholder="what to EXCLUDE"  type="text" />-->
+                            <!--</div>-->
+                        </div>
+
+                        <div id="add-rss-agent-btn">Add Agent</div>
+
+                        <!--<hr>-->
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="th-ui-blocker-panel"></div>
+
+        </div>
+    </div>
+
+</div>

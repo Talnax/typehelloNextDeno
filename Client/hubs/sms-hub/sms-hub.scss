@@ -1,0 +1,227 @@
+/*
+ * Author:  Rost Shevtsov ( herclia )
+ * project: TypeHello, 2013
+ * product: Web-Communicator ( TypeHello ) Channel2Channel
+ * file:    sms-hub.css
+ */
+
+
+/* ---------------------------------------------------------------------------- sms-hub */
+
+.sms-hub {
+  width: 300px;
+  position: fixed;
+}
+
+.sms-hub {
+  .light-gray-line-2 {
+    width: 78px;
+  }
+}
+
+/* ---------------------------------------------------------------------------- article, section */
+
+.sms-hub .th-cover .th-section .user-profile-picture {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------- sms-list */
+
+.sms-hub .users-list {
+  margin: 0 0 0 18px;
+  font-size: 100%;
+}
+
+/* ---------------------------------------------------------------------------- sms-list-view-ctrl */
+
+#users-sms-list-view-ctrl, #messages-list-view-ctrl {
+  max-height: 360px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 15px 3px 9px 3px;
+}
+
+/* ---------------------------------------------------------------------------- sms-list-view-item-template */
+
+#users-sms-list-view-ctrl .sms-list-view-item-template {
+  position: relative;
+  width: 30%;
+  padding: 9px;
+  margin-left: 6px;
+  margin-right: 18px;
+  margin-bottom: 6%;
+  float: left;
+  box-shadow: 0 0 9px rgba( 0,0,0,0.6);
+  border-radius: 9px;
+  border: 3px solid rgb(35, 169, 110);
+}
+
+#users-sms-list-view-ctrl .sms-list-view-item-template:hover {
+  background: rgb( 230, 230, 230 );
+  border: 3px solid dodgerblue;
+  cursor: pointer;
+}
+
+.sms-list-view-item-template .user-template-content {
+  width: 100%;
+}
+
+#users-sms-list-view-ctrl .template-image {
+  width: 45px;
+  height: 45px;
+  float: right;
+  margin-bottom: 15px;
+}
+
+#users-sms-list-view-ctrl .template-date span {
+  position: relative;
+  float: left;
+  font-size: 9px;
+}
+
+#users-sms-list-view-ctrl .template-nick {
+  position: absolute;
+  margin-top: 11px;
+  font-weight: bold;
+  bottom: 3px;
+}
+
+#users-sms-list-view-ctrl .template-nick span {
+  font-size: 13px;
+  color: black;
+}
+
+.sms-list-view-item-template .signal-item {
+  display: none;
+  position: absolute;
+  top: 27px;
+  left: 6px;
+}
+
+/* ---------------------------------------------------------------------------- messages-list */
+
+.sms-hub .messages-list {
+  margin: 9px 0 9px 9px;
+  font-size: 100%;
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------- messages-list-view-ctrl */
+
+#messages-list-view-ctrl {}
+
+#messages-list-view-ctrl li {}
+
+.messages-list-view-item-template {}
+
+.bubbledLeft, .bubbledRight {
+  margin: 6px;
+  padding: 3px 6px 3px 6px;
+  clear: both;
+  font-size: 12px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.6);
+  max-width: 69%;
+  overflow: hidden;
+}
+
+.bubbledLeft span,
+.bubbledRight span {
+  font-size: 12px;
+  overflow: hidden;
+  word-wrap: break-word;
+  color: black!important;
+}
+
+.bubbledLeft {
+  float: left;
+  margin-right: auto;
+  border: 1px solid rgb(12, 119, 73);
+  border-radius: 6px 6px 6px 0;
+  background: rgba(35, 169, 110, 0.7);
+  text-align: left;
+}
+
+.bubbledRight {
+  float: right;
+  margin-left: auto;
+  text-align: right;
+  border: 1px solid royalblue;
+  border-radius: 6px 6px 0 6px;
+  background: rgba( 30, 144, 255, 0.7);
+}
+
+/* ---------------------------------------------------------------------------- sms-sender-footer */
+
+.sms-sender-footer {
+  position: relative;
+  min-height: 45px;
+  margin: 15px auto;
+  width: 96%;
+  display: block;
+}
+
+.sms-sender-footer #id-sms-text {
+  float: left;
+  width: 72%!important;
+  min-width: 72%;
+  text-align: left;
+  font-size: 12px;
+  height: 45px;
+  max-height: 45px;
+  min-height: 36px;
+  overflow-y: hidden;
+  resize: none;
+  padding: 0 !important;
+
+  background: #23a96e !important;
+  border-radius: 3px;
+  border: 1px solid #23a96e;
+  box-shadow: 1px 1px 9px rgba(0,0,0,0.6) !important;
+}
+
+.sms-sender-footer #id-sms-text:focus {
+  outline: none !important;
+  border: 1px solid #5DC396 !important;
+  background: #23a96e !important;
+  border-radius: 3px;
+}
+
+.sms-hub {
+  .th-circle-btn {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+  }
+
+  .th-circle-btn:after {
+    content: "\e004";
+  }
+
+  #id-btn-send-sms {
+    float: left;
+    font-size: 18px;
+    margin-top: 3px;
+    margin-left: 18px;
+
+    &:hover {
+      cursor: pointer;
+      color: black;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+    }
+  }
+}
+
+//.sms-sender-footer #id-btn-send-sms {
+//  //float: right;
+//  float: left;
+//  font-size: 24px;
+//  margin-top: 9px;
+//  margin-left: 15px;
+//  text-shadow: 1px 1px white;
+//}
+//
+//.sms-sender-footer #id-btn-send-sms:hover {
+//  cursor: pointer;
+//}

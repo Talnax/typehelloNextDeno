@@ -1,0 +1,193 @@
+<div class="wall-hub th-panel">
+
+    <script id='wall-item-template' type="text/template">
+        <div class="wall-list-view-item-template">
+            <aside>
+                <div class="template-image user-image-male"></div>
+            </aside>
+            <div class="template-date">
+                <span class="light-gray-frg">template-date</span>
+            </div>
+            <div class="template-data"><span></span></div>
+            <div class="template-nick">
+                <span class="green-frg">template-nick</span>
+            </div>
+            <div class="template-title"><span class="gray-frg">template-title</span></div>
+            <div class="template-text"><span>template-text</span></div>
+            <div class="template-pic">
+                <img src="http://typehello.com/th-next-resources/comic-images-eng/eng_page_01.jpg" />
+            </div>
+
+            <div class="template-link">
+                <a href="">http://www.typehello.com/</a>
+            </div>
+            <ul class="wall-list-view-comments-ctrl">
+            </ul>
+            <div class="template-action">
+                <span>Action</span>
+                <ul class="th-user-actions">
+                    <li>
+                        <span class="th-glyph li_news gray-frg"
+                              data-action="showSubPostWallItemDlg"
+                              data-template-dlg="wall-hub-dlg-wall-sub-item"
+                              title="Add comment">
+                        </span>
+                    <li>
+                        <span class="th-glyph li_trash gray-frg"
+                              data-action="removePost"
+                              title="Remove post">
+                         </span>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+    </script>
+
+    <script id='wall-item-comment-template' type="text/template">
+        <div class="wall-list-view-item-comment-template">
+            <aside>
+                <div class="template-image user-image-male"></div>
+            </aside>
+            <div class="template-date light-gray-frg">
+                <span class="light-gray-frg">template-date</span>
+            </div>
+            <div class="template-nick">
+                <span class="gray-frg">template-nick</span>
+            </div>
+            <div class="template-text">
+                <span>template-text</span>
+            </div>
+        </div>
+    </script>
+
+    <script id='th-dlg-template-wall-item' type="text/template">
+        <div class="th-dlg double-dark-green-frg" >
+            <div class="th-dlg-wall-item  th-dlg-template green-bkg">
+                <span class="btn-circle btn-circle-position btn-circle-green"></span>
+                <div class="th-dlg-title dark-green-bkg green-frg">th-dlg-title</div>
+                <div class="th-btn-div-fill-content">
+                    <span class="th-glyph li_news th-btn-fill-wall-post-by-web-content" title="Fill post by content of web-page">
+                    </span>
+                </div>
+                <div class="th-dlg-content">
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">To:</div>
+                        <select class="th-dlg-wall-item-select-person-status th-dlg-value">
+                            <option value="all">all</option>
+                            <option value="friend">friend</option>
+                            <option value="colleague">colleague</option>
+                            <option value="partner">partner</option>
+                            <option value="companion">companion</option>
+                            <option value="family">family</option>
+                            <option value="fellow">fellow</option>
+                        </select>
+                    </div>
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">Talk By:</div>
+                        <select class="th-dlg-wall-item-select-language th-dlg-value">
+                            <option value="Any Language" >any language</option>
+                            <option value="English" >english</option>
+                            <option value="Russian" >russian</option>
+                            <option value="French" >french</option>
+                            <option value="Spanish" >spanish</option>
+                            <option value="Italian" >italian</option>
+                        </select>
+                    </div>
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">From:</div>
+                        <span class="th-template-nick th-dlg-value">rost</span>
+                    </div>
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">Title:</div>
+                        <textarea class="th-dlg-wall-item-title" placeholder="How you want call this news?"></textarea>
+                    </div>
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">Post:</div>
+                        <textarea class="th-dlg-wall-item-text" placeholder="What do you want to say?" maxlength="900"></textarea>
+                    </div>
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">Link:</div>
+                        <textarea class="th-dlg-wall-item-link" placeholder="Is this news have web-address?"></textarea>
+                    </div>
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">Image:</div>
+                        <textarea class="th-dlg-wall-item-image-link" placeholder="Do you want to add link to image?"></textarea>
+                    </div>
+
+                </div>
+                <div class="th-dlg-footer green-frg">
+                    <hr>
+                    <ul>
+                        <li>
+                            <div class="th-btn-add-wall-post btn-rect btn-rect-dl-white white-frg btn-shadow">ADD</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <div class="th-cover">
+
+        <div class="th-header">
+            <div class="right-side black-frg th-top-menu">
+                <div class="logo-panel th-logo-menu th-box-shadow-menu"></div>
+            </div>
+            <div class='right-side th-common-progress-bar'>
+                <div class="th-img-progress-bar"></div>
+            </div>
+            <div class="th-slide-menu"></div>
+            <div class="drag-panel left-side green-bkg white-frg">wall hub</div>
+            <span id='btn-close-ignore-hub' class="btn-circle btn-circle-position btn-circle-green"></span>
+        </div>
+
+        <div class="th-section">
+            <div class='light-gray-line-2'></div>
+            <div class='th-title black-frg'>WALL</div>
+            <div class='value green-frg'>any news from people you know</div>
+        </div>
+
+        <div class="th-article">
+            <ul class="th-ul-main-menu">
+                <li class="th-tool-menu-item-green-bkg li_params"
+                    data-action="readAllWallPosts"
+                    data-tip="Refresh"
+                    title="Refresh">
+                </li>
+                <li class="th-tool-menu-item-green-bkg li_pen"
+                    data-action="showWallItemDlg"
+                    data-template-dlg="wall-hub-dlg-wall-item"
+                    data-tip="Add a post"
+                    title="Add a post">
+                 </li>
+            </ul>
+            <div class="light-gray-line-2"></div>
+            <div class="th-title">WALL</div>
+            <div class="sub-title">any news from people you know</div>
+            <hr>
+        </div>
+
+        <div class="wall-list">
+
+            <ul id='wall-list-view-ctrl' class="black-frg" >
+            </ul>
+
+        </div>
+
+        <div class="th-footer green-bkg">
+            <div class="footer-tool-tip">welcome to wall-hub</div>
+        </div>
+
+        <div class="wall-hub-dlg-wall-item invisible-item"></div>
+
+        <div class="wall-hub-dlg-wall-sub-item invisible-item"></div>
+
+        <div class="wall-hub-dlg-feedback invisible-item"></div>
+
+        <div class="wall-hub-dlg-info invisible-item"></div>
+
+    </div>
+
+</div>

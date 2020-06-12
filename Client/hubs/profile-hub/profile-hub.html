@@ -1,0 +1,172 @@
+<div class="profile-hub th-panel" >
+    <div class="th-cover">
+
+        <div class="th-header">
+            <div class="right-side black-frg th-top-menu">
+                <div class="logo-panel th-logo-menu th-box-shadow-menu"></div>
+            </div>
+            <div class='right-side th-common-progress-bar'>
+                <div class="th-img-progress-bar"></div>
+            </div>
+            <div class="th-slide-menu"></div>
+            <div class="drag-panel left-side green-bkg white-frg">profile hub</div>
+            <span id='btn-close-profile-hub' class="btn-circle btn-circle-position btn-circle-green"></span>
+        </div>
+
+        <div class="th-section">
+            <div class='light-gray-line-2'></div>
+            <div class='th-title black-frg'>PROFILE</div>
+            <div class='value green-frg'>Change your profile info</div>
+            <div class="user-profile-picture user-image-male"></div>
+        </div>
+
+        <div id="profile-values">
+
+            <div id="profile-titles" >
+                <div class="th-title green-frg">PUBLIC PROFILE</div>
+                <div class="sub-title">ALL USERS CAN SEE THIS INFORMATION</div>
+                <hr>
+            </div>
+
+            <div id="read-only">
+                <div class="read-only-panel">
+                    <div class="name-param">NICK:</div>
+                    <span id='th-read-nick' class="value-param">read-nick</span>
+                </div>
+                <div class="read-only-panel">
+                    <div class="name-param">GENDER:</div>
+                    <span id='th-read-gender' class="value-param">read-gender</span>
+                </div>
+                <div class="read-only-panel">
+                    <div class="name-param">COUNTRY:</div>
+                    <span  id='th-read-country'  class="value-param">read-country</span>
+                </div>
+                <div class="read-only-panel">
+                    <div class="name-param">LANGUAGE:</div>
+                    <span id='th-read-lng' class="value-param">read-language</span>
+                </div>
+            </div>
+
+            <div class="th-expanders-profile">
+                <hr>
+
+                <div class="th-article-expander-block">
+                    <span id="btn-expander-recommended" class="btn-circle-15 btn-circle-position-15 btn-circle-gray"></span>
+                    <span class="th-glyph li_eye" data-action="recommended-info" title="Recommended Info"></span>
+                    <div class="th-article-expander-title">
+                        <div class="th-title">recommended</div>
+                        <div class="sub-title">country, languages, gender, photo</div>
+                    </div>
+
+                    <div class="th-profile-recommended">
+
+                        <hr>
+                        <div class="w-r-param-value">
+                            <div class="name-param">Picture:</div>
+                            <div class="th-text-area">
+                                <textarea  id='th-profile-picture' type="text" placeholder="Link to your online photo, like so - http://your.picture.jpg" ></textarea>
+                            </div>
+                        </div>
+                        <div class="w-r-param-value">
+                            <div class="name-param">Gender:</div>
+                            <select id="th-profile-gender">
+                                <option value="undefine">undefine</option>
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                            </select>
+                        </div>
+                        <div class="w-r-param-value">
+                            <div class="name-param">Country:</div>
+                            <select id="th-profile-country">
+                                <option value="undefine">undefine</option>
+                                <option value="brazil">Brazil</option>
+                                <option value="canada" >Canada</option>
+                                <option value="france" >France</option>
+                                <option value="germany" >Germany</option>
+                                <option value="india" >India</option>
+                                <option value="italy" >Italy</option>
+                                <option value="portugal" >Portugal</option>
+                                <option value="russia" >Russia</option>
+                                <option value="spain" >Spain</option>
+                                <option value="usa" >USA</option>
+                            </select>
+                        </div>
+                        <div class="w-r-param-value">
+                            <div class="name-param">Language:</div>
+                            <select id="th-profile-language">
+                                <option value="undefine">undefine</option>
+                                <option value="english" >English</option>
+                                <option value="french" >French</option>
+                                <option value="german" >German</option>
+                                <option value="italian" >Italian</option>
+                                <option value="portuguese" >Portuguese</option>
+                                <option value="russian" >Russian</option>
+                                <option value="spanish" >Spanish</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="th-article-expander-block">
+                    <span id="btn-expander-extended" class="btn-circle-15 btn-circle-position-15 btn-circle-gray"></span>
+                    <span class="th-glyph li_eye" data-action="extended-info" title="Recommended Info"></span>
+                    <div class="th-article-expander-title">
+                        <div class="th-title">extended</div>
+                        <div class="sub-title">Information about yourself</div>
+                    </div>
+
+                    <div class="th-profile-extended">
+
+                        <hr>
+                        <div class="w-r-param-value">
+                            <div class="name-param">Interests:</div>
+                            <div class="th-text-area">
+                                <textarea id='th-profile-interests' class="txt-area-value" placeholder="sport bike, movie, classic music" maxlength="360"></textarea>
+                            </div>
+                        </div>
+                        <div class="w-r-param-value">
+                            <div class="name-param">Site:</div>
+                            <div class="th-text-area">
+                                <!--<textarea id='th-profile-site' class="txt-area-value" placeholder="http://www.your-site.com" maxlength="360"></textarea>-->
+                                <input id='th-profile-site' type="text" placeholder="http://www.YOUR-site.com" maxlength="255">
+                            </div>
+                        </div>
+                        <div class="w-r-param-value">
+                            <div class="name-param">Hobbies:</div>
+                            <div class="th-text-area">
+                                <textarea id='th-profile-hobbies' class="txt-area-value" placeholder="gaming, sport, programming" maxlength="360"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="w-r-param-value">
+                            <div class="name-param">City:</div>
+                            <div class="th-text-area">
+                                <input id='th-profile-city' type="text" placeholder="San Francisco, CA" maxlength="150">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+
+        <div class="th-profile-footer-submit">
+            <!--<hr>-->
+            <!--<div id="btn-submit-profile" class="btn-rect btn-rect-green green-frg btn-shadow">SUBMIT</div>-->
+            <!--<div class="th-glyph li_data" id="btn-submit-profile"></div>-->
+            <span class="th-circle-btn" id="btn-submit-profile"></span>
+        </div>
+
+        <div class="th-footer green-bkg">
+            <div class="footer-tool-tip">welcome to profile-hub</div>
+        </div>
+
+        <div class="profile-hub-dlg-feedback invisible-item"></div>
+
+        <div class="profile-hub-dlg-info invisible-item"></div>
+
+        <div class="profile-hub-dlg-settings invisible-item"></div>
+
+    </div>
+</div>

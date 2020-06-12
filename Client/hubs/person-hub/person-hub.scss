@@ -1,0 +1,218 @@
+/*
+ * Author:  Rost Shevtsov ( herclia )
+ * project: TypeHello, 2013
+ * product: Web-Communicator ( TypeHello ) Channel2Channel
+ * file:    person-hub.css
+ */
+
+
+/* ---------------------------------------------------------------------------- sms-hub */
+
+.person-hub {
+  width: 300px;
+  position: fixed;
+}
+
+.person-hub {
+  .light-gray-line-2 {
+    width: 60px;
+  }
+}
+
+/* ---------------------------------------------------------------------------- article, section */
+
+.person-hub .th-cover .th-section .user-profile-picture {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------- person-list */
+
+.person-hub .person-list {
+  margin: 0 0 18px 18px;
+  font-size: 100%;
+}
+
+/* ---------------------------------------------------------------------------- person-list-view-ctrl */
+
+#person-list-view-ctrl, #messages-list-view-ctrl {
+  max-height: 630px;
+  overflow-y: auto;
+  padding: 9px 3px;
+}
+
+
+/* ---------------------------------------------------------------------------- person-list-view-item-template */
+
+#person-list-view-ctrl .person-list-view-item-template {
+  position: relative;
+  width: 78px;
+  height: 69px;
+  padding: 9px;
+  margin-left: 8px;
+  margin-right: 18px;
+  margin-bottom: 6%;
+  float: left;
+  box-shadow: 0 0 9px rgba( 0,0,0,0.6);
+  border-radius: 9px;
+  border: 3px solid rgb(35, 169, 110);
+}
+
+#person-list-view-ctrl .person-list-view-item-template:hover {
+  background: rgb( 230, 230, 230 );
+  border: 3px solid dodgerblue;
+  cursor: pointer;
+}
+
+.person-list-view-item-template .user-template-content {
+  width: 100%;
+}
+
+#person-list-view-ctrl .template-image {
+  width: 45px;
+  height: 45px;
+  float: right;
+  margin-top: 3px;
+}
+
+#person-list-view-ctrl .template-date span {
+  position: relative;
+  float: left;
+  font-size: 9px;
+}
+
+#person-list-view-ctrl .template-nick {
+  position: absolute;
+  margin-top: 11px;
+  font-weight: bold;
+  margin-right: 3px;
+  bottom: 3px;
+  line-height: .6em;
+  text-align: left;
+}
+
+#person-list-view-ctrl .template-nick span {
+  font-size: 13px;
+  color: black;
+}
+
+.person-list-view-item-template .signal-item {
+  display: none;
+  position: absolute;
+  top: 27px;
+  left: 6px;
+}
+
+/* ---------------------------------------------------------------------------- messages-list-view-ctrl */
+
+#messages-list-view-ctrl {}
+
+#messages-list-view-ctrl li {}
+
+.messages-list-view-item-template {}
+
+.bubbledLeft, .bubbledRight {
+  margin: 6px;
+  padding: 3px 6px 3px 6px;
+  clear: both;
+  font-size: 12px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.6);
+  text-align: left;
+}
+
+.bubbledLeft span,
+.bubbledRight span {
+  font-size: 12px;
+  color: black!important;
+}
+
+.bubbledLeft {
+  float: left;
+  margin-right: auto;
+  border: 1px solid rgb(12, 119, 73);
+  border-radius: 6px 6px 6px 0;
+  background: rgba(35, 169, 110, 0.7);
+}
+
+.bubbledRight {
+  float: right;
+  margin-left: auto;
+  border: 1px solid royalblue;
+  border-radius: 6px 6px 0 6px;
+  background: rgba( 30, 144, 255, 0.7);
+}
+
+.person-list-view-item-template .th-person-menu {
+  position: absolute;
+  height: 36px;
+  top: 27px;
+  left: 3%;
+  float: left;
+
+  display: none;
+}
+
+.person-list-view-item-template li.th-person-menu-item {
+  float: left;
+  margin-top: 9px;
+  margin-left: 6px;
+  margin-right: 6px;
+  cursor: pointer;
+  background: none;
+}
+
+/* ---------------------------------------------------------------------------- select list person status */
+
+.th-persons-list {
+  width: 60%;
+  margin: 15px auto;
+  font-size: 12px;
+
+  select {
+    background: #23a96e !important;
+    box-shadow: 1px 1px 9px rgba(0,0,0,0.6)!important;
+    border: none;
+    height: 20px;
+  }
+}
+
+.th-title-status {
+  line-height: 18px;
+  font-size: 12px;
+  float: left;
+  width: 27%;
+}
+
+.th-select-person-status {
+  float: inherit;
+  font-size: 12px;
+  margin: 0;
+  width: initial;
+  min-width: initial;
+}
+
+@media screen and (max-height: 900px) {
+  #person-list-view-ctrl, #messages-list-view-ctrl {
+    max-height: 310px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

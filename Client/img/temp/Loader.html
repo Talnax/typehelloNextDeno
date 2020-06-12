@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///Users/rostislavshevtsov/Desktop/th-NEXT/CLIENT/test-hub.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Loader</title>
+
+    <script type="text/javascript" src="./Loader_files/client-loader.js"></script>
+
+    <style type="text/css">
+
+        .arrow-up {
+            width: 0;
+            height: 0;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+
+            border-bottom: 60px solid black;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+
+        function testHub() {
+
+            var mainCSS  = pathServer + "CLIENT/css/general.css";
+            var glyphCSS = pathServer + "CLIENT/css/glyphs.css";
+            var jqUrl    = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js";
+            var jqUIUrl  = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js";
+
+            var listUrls = [
+                pathServer + 'CLIENT/js/client-common.js',
+                pathServer + 'CLIENT/js/common-hub.js',
+                pathServer + 'SHARE/user-definition.js'
+            ];
+
+            // load common css and js files
+
+            loadCss(mainCSS, function() {
+                loadCss(glyphCSS, function() {
+                    loadJQuery( jqUrl, function() {
+                        loadJQueryUI( jqUIUrl, function() {
+                            loadArrayJS( listUrls, 0, function() {
+
+                                var thDiv = document.createElement("div");
+                                thDiv.className = 'th-node';
+                                document.body.appendChild(thDiv);
+
+
+//                                loadHub( 'hub-center', function(res) {
+//                                    if( res === 'ok' ) {
+//
+//                                        if( !hubCenter ) {
+//                                            hubCenter = new th.next.HubCenter();
+//                                        }
+//
+//                                        hubCenter.hubShow( true );
+//                                    }
+//                                });
+
+                                var mainTMPL  = pathServer + 'CLIENT/html/templates.html';
+                                loadHtml( mainTMPL, parseHtmlContent, function( res ) {
+                                    if( res === 'ok' ) {
+
+                                        loadHub( 'search-hub', function(res) {
+                                            if( res === 'ok' ) {
+
+                                                if( !hubSearch ) {
+                                                    hubSearch = new th.next.SearchHub();
+                                                }
+
+                                                hubSearch.hubShow( true );
+                                            }
+                                        });
+                                    }
+                                });
+
+
+                            });
+                        });
+                    });
+                });
+            });
+        }
+
+        window.onload = function() {
+
+            testHub();
+
+            //var thRef = document.getElementById("th-test-hub");
+            //thRef.addEventListener('click', testHub );
+        };
+
+    </script>
+<link rel="stylesheet" href="http://localhost:1337/CLIENT/css/general.css"><link rel="stylesheet" href="http://localhost:1337/CLIENT/css/glyphs.css"><script type="text/javascript" async="" src="./Loader_files/jquery.min.js"></script><script type="text/javascript" async="" src="./Loader_files/jquery-ui.min.js"></script><script type="text/javascript" async="" src="./Loader_files/client-common.js"></script><script type="text/javascript" async="" src="./Loader_files/common-hub.js"></script><script type="text/javascript" async="" src="./Loader_files/user-definition.js"></script><link rel="stylesheet" type="text/css" href="./Loader_files/search-hub.css"><script type="text/javascript" async="" src="./Loader_files/search-hub.js"></script><script type="text/javascript" async="" src="./Loader_files/search-hub-controller.js"></script></head>
+<body style="">
+
+<!--<a href="#" id='th-test-hub'>Test Hub</a>-->
+
+<div class="arrow-up"></div>
+
+
+
+<div class="th-node"><script id="th-dlg-template-profile" type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-profile green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                FULL PROFILE
+            </div>
+
+            <div class="th-dlg-content">
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">NICK:</div>
+                    <span class="prf-nick th-dlg-value">rost</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">LANGUAGE:</div>
+                    <span class="prf-lng th-dlg-value">French</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">COUNTRY:</div>
+                    <span class="prf-country th-dlg-value">Spain</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">BIRTHDAY:</div>
+                    <span class="prf-birth th-dlg-value">1968-11-25</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">GENDER:</div>
+                    <span class="prf-gender th-dlg-value">male</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">City:</div>
+                    <span class="prf-city th-dlg-value">...</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">About Me:</div>
+                    <span class="prf-about-me th-dlg-value">just about me </span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Hobbies:</div>
+                    <span class="prf-hobbies th-dlg-value">Motorcycle  Gaming  Volleyball</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Profession:</div>
+                    <span class="prf-profession th-dlg-value">Soft Dev</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Expertise:</div>
+                    <span class="prf-expertise th-dlg-value">...</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</script><script id="th-dlg-template-sms" type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-sms green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                SEND SMS
+            </div>
+
+            <div class="th-dlg-content">
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">TO:</div>
+                    <span class="th-template-nick th-dlg-value">rost</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">SMS:</div>
+                    <textarea class="th-dlg-sms-text"></textarea>
+                </div>
+                <div class="th-btn-send-sms btn-rect btn-rect-white white-frg btn-shadow">SEND</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</script><script id="th-dlg-template-ignore" type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-ignore green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                IGNORE PERSON
+            </div>
+
+            <div class="th-dlg-content">
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Nick:</div>
+                    <span class="th-template-nick th-dlg-value">rost</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">???</div>
+                    <!--<span class="th-dlg-value">Are you sure?</span>-->
+                     <span class="th-dlg-value">Really? Ignore this person?</span>
+                </div>
+                <div class="th-btn-ignore btn-rect btn-rect-white white-frg btn-shadow">IGNORE</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</script><script id="th-dlg-template-make-person-as" type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-make-person-as green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                MAKE PERSON AS...
+            </div>
+
+            <div class="th-dlg-content">
+
+                <!--
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Nick:</div>
+                    <span class="th-template-nick th-dlg-value">rost</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">???</div>
+                    <span class="th-dlg-value">Do you want ignore this person?</span>
+                </div>
+                <div class="th-btn-ignore btn-rect btn-rect-white white-frg btn-shadow">IGNORE</div>
+                -->
+
+                <div class="th-dlg-message-box"></div>
+
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">MAKE PERSON:</div>
+                    <span class='th-template-nick th-dlg-value'>Herclia</span>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">AS:</div>
+                    <select class="th-dlg-person-status">
+                    </select>
+                </div>
+                <div class="btn-make-person-as btn-rect btn-rect-white white-frg btn-shadow">MAKE</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</script><script id="th-dlg-template-per-theme" type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-per-theme green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                CHANNEL ABOUT SUBJECT
+            </div>
+
+            <div class="th-dlg-content">
+                <!--<div class="th-dlg-data">-->
+                    <!--<div class="th-dlg-name">TO:</div>-->
+                    <!--<span class="th-template-nick th-dlg-value">rost</span>-->
+                <!--</div>-->
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">CHANNEL:</div>
+                    <input class="th-dlg-channel-per-theme-text" placeholder=" Example: 'siberian cat'" />
+                </div>
+                <div class="th-btn-open-channel-per-theme btn-rect btn-rect-white white-frg btn-shadow">CREATE</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</script><script id="th-dlg-template-per-filter" type="text/template">
+
+    <div class="th-dlg double-dark-green-frg" >
+
+        <div class="th-dlg-per-filter green-bkg ">
+            <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+            <div class="th-dlg-title dark-green-bkg green-frg">
+                FILTER
+            </div>
+
+            <div class="th-dlg-content">
+
+                <div class="th-dlg-message-box"></div>
+
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Nick:</div>
+                    <input class="th-dlg-search" />
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Hobbies:</div>
+                    <input class="th-dlg-hobbies" />
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Gender:</div>
+                    <select class="th-dlg-user-gender">
+                        <option value="male" >male</option>
+                        <option value="female" >female</option>
+                    </select>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Country:</div>
+                    <select class="th-dlg-user-country">
+                        <option value="USA" >usa</option>
+                        <option value="Russia" >russia</option>
+                        <option value="Canada" >canada</option>
+                        <option value="France" >france</option>
+                        <option value="Spain" >spain</option>
+                        <option value="Italy" >italy</option>
+                    </select>
+                </div>
+                <div class="th-dlg-data">
+                    <div class="th-dlg-name">Language:</div>
+                    <select class="th-dlg-user-language">
+                        <option value="English" >english</option>
+                        <option value="Russian" >russian</option>
+                        <option value="French" >french</option>
+                        <option value="Spanish" >spanish</option>
+                        <option value="Italian" >italian</option>
+                    </select>
+                </div>
+                <div class="btn-set-filter btn-rect btn-rect-white white-frg btn-shadow">SET FILTER</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</script><div class="search-hub th-panel ui-draggable" style="z-index: 9991; display: block;">
+    <div class="th-cover">
+
+        <header>
+            <div class="right-side black-frg day-today">
+                <div class="logo-panel th-logo"></div>
+            </div>
+            <div class="right-side th-common-progress-bar">
+                <div class="th-img-progress-bar"></div>
+            </div>
+            <div class="th-slide-menu">
+                <ul>
+                    <!--<li class="th-slide-menu-item">-->
+                    <!--<span class="th-glyph li_params" data-action='settings' title="settings-hub"></span>-->
+                    <!--</li>-->
+                    <!--<li class="th-slide-menu-item">-->
+                    <!--<span class="th-glyph li_news" data-action='news' title="news-hub"></span>-->
+                    <!--</li>-->
+                    <li class="th-slide-menu-item">
+                        <span class="th-glyph li_pen" data-action="sms" title="sms-hub"></span>
+                    </li>
+                    <li class="th-slide-menu-item">
+                        <span class="th-glyph li_trash" data-action="ignores" title="ignores-hub"></span>
+                    </li>
+                    <li class="th-slide-menu-item">
+                        <span class="th-glyph li_user" data-action="friends" title="persons-hub"></span>
+                    </li>
+                    <li class="th-slide-menu-item">
+                        <span class="th-glyph li_note" data-action="profile" title="profile-hub"></span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="left-side green-bkg white-frg">search hub</div>
+            <span id="btn-close-search-hub" class="btn-circle btn-circle-position btn-circle-green"></span>
+        </header>
+
+        <section>
+            <div class="light-gray-line-2"></div>
+            <div class="th-title black-frg">SEARCH</div>
+            <div class="value green-frg">People of your interests and hobbies</div>
+        </section>
+
+        <article>
+            <ul class="th-ul-main-menu">
+                <li class="main-menu-channel-filter" data-action="DlgPerFilter" data-dlg="search-hub-dlg-per-filter" title="What kind of people you looking at?"></li>
+            </ul>
+            <div class="th-title green-frg">LOOK AT</div>
+            <div class="sub-title light-gray-frg">People offline and online</div>
+            <hr>
+        </article>
+
+        <div class="search-hub-content">
+
+            <div class="radar-content">
+
+                <div class="radar-element">
+                    <div class="radar-line-1">
+                    <div class="radar-line-2">
+                        <div class="radar-line-3">
+
+                            <div class="radar-vertical-line "></div>
+                            <div class="radar-horizontal-line "></div>
+
+                            <div class="radar-line-4">
+                                <div class="radar-line-5">
+
+                                    <!--<div class="scan-panel"></div>-->
+                                    <div id="scanner"></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="radar-ctrls">
+
+                    <div class="radar-data-panel">
+                        <div class="radar-data-text">Users per Scan:</div>
+                        <select class="users-per-scan">
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+
+                    <div class="radar-data-panel">
+                        <div class="radar-data-text">Location:</div>
+                        <select class="radar-location">
+                            <option value="active-chats">Active channel</option>
+                            <option value="all-chats">All chats</option>
+                            <option value="all-users">All Users</option>
+                        </select>
+                    </div>
+
+                    <div id="btn-search-routine" class="btn-rect btn-rect-green green-frg btn-shadow">SEARCH</div>
+
+                </div>
+
+            </div>
+
+            <div class="search-result"></div>
+
+        </div>
+
+        <div class="search-hub-dlg-per-filter invisible-item"></div>
+
+    </div>
+</div></div></body></html>

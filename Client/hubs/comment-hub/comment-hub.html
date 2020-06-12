@@ -1,0 +1,149 @@
+<div class="comment-hub th-panel">
+
+    <script id='comment-item-template' type="text/template">
+
+        <div class="comment-list-view-item-template">
+            <div class="template-date">
+                <span class="light-gray-frg">template-date</span>
+            </div>
+            <div class="template-data"><span></span></div>
+            <div class="template-nick">
+                <div class="template-image user-image-male"></div>
+                <span class="gray-frg">template-nick</span>
+            </div>
+            <div class="template-text">
+                <span>
+                    [HD] Portugal 3-2 Sweden I Sweden vs Portugal 2-3 I All Goals Full Highlights I 19/11/2013 Cristiano Ronaldo
+                    Sweden vs Portugal 2-3 All Goals and Highlights HQ 19-11-2013
+                </span>
+            </div>
+            <div class="template-link">
+                <span>
+                    <a href="http://www.youtube.com/watch?v=_dRBH28Eurc">http://www.youtube.com/watch?v=_dRBH28Eurc</a>
+                </span>
+            </div>
+            <div class="template-pic">
+                <img src="http://typehello.com/th-next-resources/comic-images-eng/eng_page_01.jpg" />
+            </div>
+            <ul class="comment-list-view-comments-ctrl">
+            </ul>
+            <div class="template-action green-frg">
+                <span>Action</span>
+                <ul class="th-user-actions gray-frg">
+                    <li><span class="th-glyph li_news"
+                              data-action="showCommentItemDlg"
+                              data-template-dlg="comment-hub-dlg-comment-item"
+                              title="Add comment"></span>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+    </script>
+
+    <script id='comment-item-comment-template' type="text/template">
+        <div class="comment-list-view-item-comment-template">
+            <aside>
+                <div class="template-image user-image-male"></div>
+            </aside>
+            <div class="template-date">
+                <span class="light-gray-frg">template-date</span>
+            </div>
+            <div class="template-nick">
+                <span class="gray-frg">template-nick</span>
+            </div>
+            <div class="template-text">
+                    <span>template-text</span>
+            </div>
+        </div>
+    </script>
+
+    <script id='th-dlg-template-comment-item' type="text/template">
+        <div class="th-dlg double-dark-green-frg" >
+            <div class="th-dlg-comment-item  th-dlg-template green-bkg ">
+                <span class="btn-circle btn-circle-position btn-circle-green"></span>
+                <div class="th-dlg-title dark-green-bkg green-frg">
+                    ADD COMMENT TO THE PAGE
+                </div>
+                <div class="th-dlg-content">
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">From:</div>
+                        <span class="th-template-nick th-dlg-value">[th-template-nick]</span>
+                    </div>
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">Text:</div>
+                        <textarea class="th-dlg-comment-item-text" placeholder="What do you want to say?" maxlength="1500"></textarea>
+                    </div>
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">Link:</div>
+                        <textarea class="th-dlg-comment-item-link" placeholder="Do you want to add some web-link?"  maxlength="360"></textarea>
+                    </div>
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">Image:</div>
+                        <textarea class="th-dlg-comment-item-image-link" placeholder="Do you want to add link to image?" maxlength="360"></textarea>
+                    </div>
+                    <!--<div class="th-btn-add-comment-post btn-rect btn-rect-dl-white white-frg btn-shadow">ADD</div>-->
+                </div>
+                <div class="th-dlg-footer green-frg">
+                    <hr>
+                    <ul>
+                        <li>
+                            <div class="th-btn-add-comment-post btn-rect btn-rect-dl-white white-frg btn-shadow">ADD</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </script>
+
+    <div class="th-cover">
+        <div class="th-header">
+            <div class="right-side black-frg th-top-menu">
+                <div class="logo-panel th-logo-menu th-box-shadow-menu"></div>
+            </div>
+            <div class='right-side th-common-progress-bar'>
+                <div class="th-img-progress-bar"></div>
+            </div>
+            <div class="th-slide-menu"></div>
+            <div class="drag-panel left-side green-bkg white-frg">comment hub</div>
+            <span id='btn-close-comment-hub' class="btn-circle btn-circle-position btn-circle-green"></span>
+        </div>
+        <div class="th-section">
+            <div class='light-gray-line-2'></div>
+            <div class='th-title black-frg'>COMMENT</div>
+            <div class='value green-frg'>say something about this content</div>
+        </div>
+        <div class="th-article">
+            <ul class="th-ul-main-menu">
+                <li class="th-tool-menu-item-green-bkg li_params"
+                    data-action="readAllCommentPosts"
+                    data-tip="Refresh"
+                    title="Refresh">
+                </li>
+                <li class="th-tool-menu-item-green-bkg li_pen"
+                    data-action="showCommentItemDlg"
+                    data-template-dlg="comment-hub-dlg-comment-item"
+                    data-tip="Add a comment"
+                    title="Add a comment">
+                </li>
+            </ul>
+            <div class="light-gray-line-2"></div>
+            <div class="th-title">COMMENTs</div>
+            <div class="sub-title">say something about this content</div>
+            <hr>
+        </div>
+        <div class="comment-list">
+            <ul id='comment-list-view-ctrl' class="black-frg" >
+            </ul>
+        </div>
+        <div class="th-footer green-bkg">
+            <div class="footer-tool-tip">welcome to comment-hub</div>
+        </div>
+        <div class="comment-hub-dlg-comment-item invisible-item"></div>
+        <div class="comment-hub-dlg-feedback invisible-item"></div>
+        <div class="comment-hub-dlg-info invisible-item"></div>
+    </div>
+
+</div>

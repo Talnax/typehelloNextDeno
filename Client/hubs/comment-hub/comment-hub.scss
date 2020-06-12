@@ -1,0 +1,241 @@
+
+/*
+ * Author:  Rost Shevtsov ( herclia )
+ * project: TypeHello, 2013
+ * product: Web-Communicator ( TypeHello ) Channel2Channel
+ * file:    comment-hub.scss
+ */
+
+
+/* -------------------------------------------------------------------------- talk-hub */
+
+.comment-hub {
+  width:  330px;
+  position: fixed;
+}
+
+.comment-hub {
+  .light-gray-line-2 {
+    width: 81px;
+  }
+
+  .th-user-actions .th-glyph {
+    font-size: 18px;
+    color: gray;
+    text-shadow: 1px 1px white;
+  }
+}
+
+/* ----------------------------------------------------------------------- comment-list */
+
+.comment-hub .comment-list {
+  margin: 0 0 18px 9px;
+  font-size: 100%;
+  //max-height: 360px;
+}
+
+/* ------------------------------------------------------------- comment-list-view-ctrl */
+
+#comment-list-view-ctrl {
+  overflow-y: auto;
+  max-height: 630px;
+  padding: 9px;
+}
+
+#comment-list-view-ctrl li {
+  background: none;
+}
+
+/* ---------------------------------------------------- comment-list-view-item-template */
+
+#comment-list-view-ctrl .comment-list-view-item-template {
+  position: relative;
+  width: 96%;
+  left: 1%;
+  text-align: left;
+}
+
+#comment-list-view-ctrl .template-date span {
+  position: relative;
+  float: right;
+  font-size: 9px;
+  right: 27px;
+}
+
+#comment-list-view-ctrl .template-nick {
+  margin-top: 11px;
+  font-size: 18px;
+  font-weight: bold;
+  word-wrap: break-word;
+  min-height: 24px;
+}
+
+#comment-list-view-ctrl .template-nick span {
+  position: relative;
+  top: 3px;
+  left: 9px;
+}
+
+#comment-list-view-ctrl .template-image {
+  width: 27px;
+  height: 27px;
+  float: left;
+}
+
+#comment-list-view-ctrl .template-pic {
+  width: 100%;
+  float: left;
+  //margin-top: 9px;
+  //margin-bottom: 15px;
+}
+
+#comment-list-view-ctrl .template-pic img {
+  height: auto;
+  width: 96%;
+  margin-top: 9px;
+  margin-bottom: 15px;
+}
+
+#comment-list-view-ctrl .comment-list-view-item-comment-template {
+  position: relative;
+  width: 78%;
+  left: 18%;
+  text-align: left;
+  clear: both;
+  top: 3px;
+}
+
+#comment-list-view-ctrl .comment-list-view-item-comment-template {
+  clear: both;
+}
+
+#comment-list-view-ctrl .comment-list-view-item-comment-template aside {
+  position: absolute;
+  display: block;
+  width: 27%;
+  //left: -27%;
+  height: 100%;
+  background: transparent;
+}
+
+#comment-list-view-ctrl .comment-list-view-item-comment-template .template-image {
+  width: 27px;
+  height: 27px;
+  margin: auto;
+}
+
+#comment-list-view-ctrl .comment-list-view-item-comment-template .template-nick {
+  //margin-top: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 27px;
+}
+
+#comment-list-view-ctrl .template-title {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 100;
+  word-wrap: break-word;
+}
+
+#comment-list-view-ctrl .template-text {
+  margin-top: 11px;
+  font-size: 12px;
+  word-wrap: break-word;
+}
+
+#comment-list-view-ctrl .template-link {
+  margin-top: 6px;
+  font-size: 12px;
+  width: inherit;
+  word-wrap: break-word;
+}
+
+#comment-list-view-ctrl .template-link a {
+  color: #4682B4;
+}
+
+#comment-list-view-ctrl .template-text span {
+  color: black!important;
+}
+
+#comment-list-view-ctrl .template-action {
+  margin-top: 15px;
+  margin-right: 9px;
+  font-size: 9px;
+  text-transform: uppercase;
+  //clear: both;
+}
+
+//#comment-list-view-ctrl .template-action span:hover {
+//  cursor: pointer;
+//}
+
+#comment-list-view-ctrl .template-action .th-user-actions {
+  position: relative;
+  top: -9px;
+  float: right;
+  opacity: 0.0;
+  cursor: pointer;
+}
+
+//#comment-list-view-ctrl .template-action .th-user-actions:hover {
+//  opacity: 1.0;
+//}
+
+#comment-list-view-ctrl .template-action .th-user-actions li {
+  float: left;
+  margin-left: 6px;
+}
+
+#comment-list-view-ctrl hr {
+  position: relative;
+  //top: -6px;
+  //margin-top: 6px;
+  border-top:    1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* -------------------------------------------------- for small resolution of monitors */
+
+@media screen and (max-height: 900px){
+  .comment-hub {
+    width:  270px;
+  }
+
+  #comment-list-view-ctrl {
+    max-height: 342px;
+  }
+
+  #comment-list-view-ctrl .template-text {
+    font-size: 11px;
+  }
+
+  #comment-list-view-ctrl .template-link {
+    font-size: 11px;
+  }
+}
+
+
+
+/*
+    75% - 100%
+    25% - ???
+    -----------
+    25% * 100% / 75% = 33.33%
+*/
+
+/*#comment-list-view-ctrl aside {*/
+/*position: absolute;*/
+
+/*display: block;*/
+/*width: 55%;*/
+/*left: -55%;*/
+/*height: 100%;*/
+
+/*background-color: #F88888;*/
+/*}*/
+
+/* ----------------------------------------------------------------------------------- */
+
+

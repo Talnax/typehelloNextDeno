@@ -1,0 +1,178 @@
+<div class="pin-hub th-panel">
+
+    <script id='pin-item-template' type="text/template">
+
+        <div class="pin-list-view-item-template">
+            <div class="template-date"><span class="light-gray-frg">template-date</span></div>
+            <div class="template-data"><span></span></div>
+            <div class="template-title">
+                <div class="template-favicon">
+                    <img src="http://www.typehello.com/favicon.ico" />
+                </div>
+                <span class="gray-frg">template-title</span>
+            </div>
+            <div class="template-text"><span>template-text</span></div>
+            <div class="template-pic"><img src="" /></div>
+            <div class="template-link"><span><a href="">template-link</a></span></div>
+            <div class="template-action">
+                <span class="green-frg">Action</span>
+                <ul class="th-user-actions gray-frg">
+                    <li>
+                        <span class="th-glyph li_news"
+                              data-action="showPinItemDlg"
+                              data-template-dlg="pin-hub-dlg-pin-item"
+                              title="Edit pin">
+                         </span>
+                    </li>
+                    <li>
+                        <span class="th-glyph li_trash"
+                              data-action="removePin"
+                              title="Remove pin">
+                         </span>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+
+    </script>
+
+    <script id='pin-item-edit-template' type="text/template">
+
+        <div class="pin-list-view-item-edit-template">
+            <aside><div class="template-image user-image-male"></div></aside>
+            <div class="template-date"><span class="light-gray-frg">template-date</span></div>
+            <div class="template-nick"><span class="gray-frg">template-nick</span></div>
+            <div class="template-text"><span>template-text</span></div>
+        </div>
+
+    </script>
+
+    <script id='th-dlg-template-pin-item' type="text/template">
+
+        <div class="th-dlg double-dark-green-frg" >
+
+            <div class="th-dlg-pin-item th-dlg-template green-bkg ">
+                <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+                <div class="th-dlg-title dark-green-bkg green-frg">th-dlg-title</div>
+
+                <div class="th-dlg-content">
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name double-dark-green-frg">Title:</div>
+                        <textarea class="th-dlg-pin-item-title"></textarea>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name double-dark-green-frg">Link:</div>
+                        <textarea class="th-dlg-pin-item-link"></textarea>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name double-dark-green-frg">Tags:</div>
+                        <textarea class="th-dlg-pin-item-tags" placeholder="tags: social, friends, chat" maxlength="450"></textarea>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name double-dark-green-frg">Text:</div>
+                        <textarea class="th-dlg-pin-item-text" placeholder="Do you want to add some content?" maxlength="900"></textarea>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name double-dark-green-frg">Image:</div>
+                        <textarea class="th-dlg-pin-item-image-link" placeholder="Do you want to add link to image?"></textarea>
+                    </div>
+
+                    <div class="th-dlg-footer green-frg">
+                        <hr>
+                        <ul>
+                            <li>
+                                <div class="th-btn-add-pin-post btn-rect btn-rect-dl-white white-frg btn-shadow">ADD</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--<div class="th-btn-add-pin-post btn-rect btn-rect-dl-white white-frg btn-shadow">ADD</div>-->
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </script>
+
+    <div class="th-cover">
+
+        <div class="th-header">
+            <div class="right-side black-frg th-top-menu">
+                <div class="logo-panel th-logo-menu th-box-shadow-menu"></div>
+            </div>
+            <div class='right-side th-common-progress-bar'>
+                <div class="th-img-progress-bar"></div>
+            </div>
+            <div class="th-slide-menu"></div>
+            <div class="drag-panel left-side green-bkg white-frg">pin hub</div>
+            <span id='btn-close-pin-hub' class="btn-circle btn-circle-position btn-circle-green"></span>
+        </div>
+
+        <div class="th-section">
+            <div class='light-gray-line-2'></div>
+            <div class='th-title black-frg'>PIN</div>
+            <div class='value green-frg'>don't forget this page</div>
+        </div>
+
+        <div class="th-article">
+            <ul class="th-ul-main-menu">
+                <li class="th-tool-menu-item-green-bkg li_params"
+                    data-action="readAllPinPosts"
+                    data-tip="Refresh"
+                    title="Refresh">
+                </li>
+                <li class="th-tool-menu-item-green-bkg li_news"
+                    data-action="expandItem"
+                    data-template-dlg="pin-hub-dlg-pin-item"
+                    data-tip="Expand pin"
+                    title="Expand pin">
+                </li>
+                <li class="th-tool-menu-item-green-bkg li_pen"
+                    data-action="showPinItemDlg"
+                    data-template-dlg="pin-hub-dlg-pin-item"
+                    data-tip="Add a pin"
+                    title="Add a pin">
+                </li>
+            </ul>
+            <div class="light-gray-line-2"></div>
+            <div class="th-title">PINs</div>
+            <div class="sub-title">don't forget this page</div>
+            <hr>
+        </div>
+
+        <div class="search-pins">
+            <input id='input-search-pins' placeholder="Search for your pins... " type="text" />
+            <!--<span class="th-glyph li_search" id="btn-input-search-pins" title="Search Pin"></span>-->
+            <span class="th-circle-btn" id="btn-input-search-pins" title="Search Pin"></span>
+            <hr>
+        </div>
+
+        <div class="pin-list">
+
+            <ul id='pin-list-view-ctrl' class="black-frg" ></ul>
+
+        </div>
+
+        <div class="th-footer green-bkg">
+            <div class="footer-tool-tip">welcome to pin-hub</div>
+        </div>
+
+        <div class="pin-hub-dlg-pin-item invisible-item"></div>
+
+        <div class="pin-hub-dlg-feedback invisible-item"></div>
+
+        <div class="pin-hub-dlg-info invisible-item"></div>
+
+    </div>
+
+</div>

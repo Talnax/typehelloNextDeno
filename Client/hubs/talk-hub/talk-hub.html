@@ -1,0 +1,134 @@
+<div class="talk-hub th-panel">
+    <div class="th-cover">
+
+    <div class="th-header">
+        <div class="right-side black-frg th-top-menu">
+            <div class="logo-panel th-logo-menu th-box-shadow-menu"></div>
+        </div>
+        <div class='right-side th-common-progress-bar'>
+            <div class="th-img-progress-bar"></div>
+        </div>
+        <div class="th-slide-menu"></div>
+        <div class="drag-panel left-side green-bkg white-frg">talk hub</div>
+        <span id='btn-close-talk-hub' class="btn-circle btn-circle-position btn-circle-green"></span>
+    </div>
+
+    <div class="th-section">
+        <div class="th-log-out">
+            <a id="th-link-log-out" href="#" title="Log out from service">LogOut</a>
+        </div>
+        <div class='light-gray-line-2'></div>
+        <div class='th-title black-frg'>CHANNEL</div>
+        <div class='value green-frg'>
+            <span class='gray-frg' id="th-active-url">
+                file://localhost/th-NEXT/th-panel.html
+            </span>
+        </div>
+    </div>
+
+    <div class="th-article">
+        <ul class="th-ul-main-menu">
+            <li class="th-tool-menu-item-green-bkg li_megaphone"
+                data-action='DlgPerTheme'
+                data-dlg='talk-hub-dlg-per-theme'
+                data-tip="What do you want to talk about?"
+                title="What do you want to talk about?"></li>
+        </ul>
+        <div class="th-title green-frg">public-chat</div>
+        <ul id='messages-server'></ul>
+        <hr>
+    </div>
+
+    <div class="tabs-chat">
+        <span class="btn-close-channel btn-circle-9 btn-circle-gray" title='Close active channel'>x</span>
+        <ul class="ul-tabs-chat-menu">
+            <!--<span class="btn-close-channel btn-circle-9 btn-circle-gray" title='Close active channel'>x</span>-->
+            <li></li>
+      </ul>
+    </div>
+
+    <br>
+
+    <div class="div-list-view-chat">
+
+        <ul id='messages-chat' class="black-frg" >
+
+            <li>
+
+                <div class="chat-list-view-item-template template-item">
+
+                    <div class="template-data" data-user> <span></span></div>
+
+                    <div class="template-date">
+                        <span class="light-gray-frg">template-date</span>
+                    </div>
+
+                    <div class="template-nick template-header">
+                        <span class="green-frg">Herclia</span>
+                        <div class="template-image"></div>
+                    </div>
+
+                    <div class="template-msg">
+                        <span>
+                            A block element is an element that takes up
+                            the full width available, and has a line break
+                            before and after it.
+                        </span>
+                    </div>
+
+                    <div class="chat-footer">
+                        <ul class="th-user-actions gray-frg">
+                            <li><span class="full-profile th-glyph li_note" title="Profile"></span></li>
+                            <!--<li><span class="make-person-as th-glyph li_user" title="Make Person as..."></span></li>-->
+                            <li><span class="send-sms th-glyph li_pen" title="Send Message"></span></li>
+                            <li><span class="private-chat th-glyph li_bubble" title="Private Chat"></span></li>
+                            <!--<li><span class="ignore-user th-glyph li_trash" title="Ignore"></span></li>-->
+                        </ul>
+
+                        <div class="expand">
+                            <span>Action</span>
+                            <!--<div class="expand-content green-frg">-->
+                                <!--Rost,USA,English,Male,15/9/1963-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+
+                    <hr>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="th-talk-footer">
+        <textarea id='chat-message' maxlength="360"></textarea>
+        <!--<div id="btn-send-chat-message" class="btn-rect btn-rect-green green-frg btn-shadow">SEND</div>-->
+        <!--<span class="th-glyph li_sound" id="btn-send-chat-message"></span>-->
+        <span class="th-circle-btn" id="btn-send-chat-message"></span>
+    </div>
+
+    <div class="th-footer green-bkg">
+        <div class="footer-tool-tip">Welcome to talk-hub</div>
+    </div>
+
+    <div class="show-dlg-ignore invisible-item"></div>
+
+    <div class="show-dlg-profile invisible-item"></div>
+
+    <div class="show-dlg-sms invisible-item"></div>
+
+    <div class="show-dlg-make-person-as invisible-item"></div>
+
+    <div class="talk-hub-dlg-per-theme invisible-item"></div>
+
+    <div class="talk-hub-dlg-per-filter invisible-item"></div>
+
+    <div class="talk-hub-dlg-feedback invisible-item"></div>
+
+    <div class="talk-hub-dlg-info invisible-item"></div>
+
+    </div>
+</div>

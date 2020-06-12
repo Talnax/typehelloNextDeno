@@ -1,0 +1,13 @@
+1. Run file:
+>sudo /Users/rosttalnax/.deno/bin/denon run --allow-net --allow-env main.ts
+>sudo /Users/rosttalnax/.deno/bin/denon run --allow-net --allow-write --allow-read --allow-plugin --unstable --allow-env main.ts
+
+2. MongoDB
+>sudo /Users/rosttalnax/mongoDB/bin/mongod --dbpath /Users/rosttalnax/mongoDB-data
+
+3. REMOVE - You can remove a record calling the remove() method on a collection,
+passing an object to help identify it:
+    - db.users.remove({ name: 'Rost' })
+
+4. DROP - Delete MongoDB Collection
+    - db.users.drop()

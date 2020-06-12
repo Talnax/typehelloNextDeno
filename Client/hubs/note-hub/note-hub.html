@@ -1,0 +1,238 @@
+<div class="note-hub th-panel">
+
+    <div id="th-dlg-template-show-note" class="invisible-item">
+
+        <div class="th-dlg" >
+
+            <div class="th-dlg-show-note th-dlg-template">
+
+                <span class="btn-circle btn-circle-position btn-circle-green"></span>
+
+                <div class="th-full-title">
+                    <div class="th-dlg-title white-frg">SHOW NOTE</div>
+                    <hr>
+                </div>
+
+                <div class="th-dlg-content">
+
+                    <!--<div class="th-dlg-image-panel"></div>-->
+                    <!--<span class="th-glyph li_note green-frg"></span>-->
+
+                    <!--<div class="th-dlg-data">-->
+                        <!--<div class="th-dlg-name">STATUS:</div>-->
+                        <!--<div class="th-dlg-show-note-status th-note-text">th-dlg-show-note-category</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="th-dlg-data">-->
+                        <!--<div class="th-dlg-name th-note-tags">TAGS:</div>-->
+                        <!--<div class="th-dlg-show-note-tags th-note-text" >th-dlg-show-note-tags</div>-->
+                    <!--</div>-->
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name th-note-title">TITLE:</div>
+                        <div class="th-dlg-show-note-title th-note-text">th-dlg-show-note-title</div>
+                    </div>
+
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name th-note-content">NOTE:</div>
+                        <div class="th-dlg-show-note-content th-note-text">th-dlg-show-note-content</div>
+                        <!--<div class="th-dlg-show-note-content th-note-text"></div>-->
+                    </div>
+
+                </div>
+
+                <div class="th-full-btn green-bkg">
+                    <hr>
+                    <ul class="th-note-show-list-btns"></ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script id='note-item-template' type="text/template">
+
+        <div class="note-list-view-item-template">
+            <div class="template-date">
+                <span  class="light-gray-frg">template-date</span>
+            </div>
+            <div class="template-data"><span></span></div>
+            <div class="template-title">
+                <div class="th-glyph li_note"></div>
+                <!--<div class="template-favicon">-->
+                    <!--&lt;!&ndash;<img src="http://www.typehello.com/favicon.ico" />&ndash;&gt;-->
+                <!--</div>-->
+                <span class="green-frg">template-title</span>
+            </div>
+            <div class="template-text">
+                <span>template-text</span>
+            </div>
+            <div class="template-pic">
+                <img src="http://typehello.com/th-next-resources/comic-images-eng/eng_page_01.jpg" />
+            </div>
+            <div class="template-action">
+                <span class="th-note-title-action gray-frg">Action</span>
+                <ul class="th-user-actions">
+                    <li>
+                        <span class="th-glyph li_note gray-frg"
+                              data-action="showNoteItemDlg"
+                              data-template-dlg="note-hub-dlg-note-item"
+                              title="Edit note">
+                         </span>
+                    </li>
+                    <li>
+                        <span class="th-glyph li_trash gray-frg"
+                              data-action="removeNote"
+                              title="Remove note">
+                         </span>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+
+    </script>
+
+    <script id='note-item-edit-template' type="text/template">
+
+        <div class="note-list-view-item-edit-template">
+            <aside><div class="template-image user-image-male"></div></aside>
+            <div class="template-date"><span class="light-gray-frg">template-date</span></div>
+            <div class="template-nick"><span class="gray-frg">template-nick</span></div>
+            <div class="template-text"><span>template-text</span></div>
+        </div>
+
+    </script>
+
+    <script id='th-dlg-template-note-item' type="text/template">
+
+        <div class="th-dlg double-dark-green-frg" >
+            <div class="th-dlg-note-item th-dlg-template green-bkg ">
+                <span class="btn-circle btn-circle-position btn-circle-green"></span>
+                <div class="th-dlg-title dark-green-bkg green-frg">th-dlg-title</div>
+                <div class="th-dlg-content">
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">title:</div>
+                        <textarea class="th-dlg-note-item-title" placeholder="Title of note..." ></textarea>
+                    </div>
+                    <!--<div class="th-dlg-data">-->
+                        <!--<div class="th-dlg-name">tags:</div>-->
+                        <!--<textarea class="th-dlg-note-item-tags" placeholder="Tags, like so: social, friends, chat" maxlength="450"></textarea>-->
+                    <!--</div>-->
+                    <div class="th-dlg-data th-note-dlg-status">
+                        <div class="th-dlg-name">status:</div>
+                        <select class="th-dlg-note-item-status">
+                            <option value="define" >define</option>
+                            <option value="progress" >progress</option>
+                            <option value="complete" >complete</option>
+                        </select>
+                        <div class="template-status-icon"/>
+                    </div>
+                    <div class="th-dlg-data">
+                        <div class="th-dlg-name">note:</div>
+                        <div class="th-formatting-tools-panel">
+                            <ul class="th-formatting-tools-list">
+                                <li class="th-note-tool th-formatting-bold" data-action="bold" title="Make bold">
+                                </li>
+                                <li class="th-note-tool th-formatting-link" data-action="link" title="Add link">
+                                </li>
+                                <li class="th-note-tool th-formatting-img" data-action="pic" title="Add picture">
+                                </li>
+                                <li class="th-note-tool th-formatting-web" data-action="web" title="Add web page info">
+                                </li>
+                            </ul>
+                        </div>
+                        <!--<textarea class="th-dlg-note-item-text" placeholder="Content of note..." maxlength="6900"></textarea>-->
+                        <textarea class="th-dlg-note-item-text" placeholder="Content of note..."></textarea>
+                    </div>
+                   <div class="th-dlg-footer green-frg">
+                        <hr>
+                        <ul>
+                            <li>
+                                <div class="th-btn-add-note-post btn-rect btn-rect-dl-white white-frg btn-shadow">ADD</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </script>
+
+    <div class="th-cover">
+
+        <div class="th-header">
+            <div class="right-side black-frg th-top-menu">
+                <div class="logo-panel th-logo-menu th-box-shadow-menu"></div>
+            </div>
+            <div class='right-side th-common-progress-bar'>
+                <div class="th-img-progress-bar"></div>
+            </div>
+            <div class="th-slide-menu"></div>
+            <div class="drag-panel left-side green-bkg white-frg">note hub</div>
+            <span id='btn-close-note-hub' class="btn-circle btn-circle-position btn-circle-green"></span>
+        </div>
+
+        <div class="th-section">
+            <div class='light-gray-line-2'></div>
+            <div class='th-title black-frg'>NOTE</div>
+            <div class='value green-frg'>don't forget your thought</div>
+        </div>
+
+        <div class="th-article">
+            <ul class="th-ul-main-menu">
+                <li class="th-tool-menu-item-green-bkg li_params"
+                    data-action="readAllNotes"
+                    data-tip="Refresh"
+                    title="Refresh">
+                </li>
+                <li class="th-tool-menu-item-green-bkg li_eye"
+                    data-action="expandItem"
+                    data-template-dlg="note-hub-dlg-note-item"
+                    data-tip="Expand"
+                    title="Expand">
+                </li>
+                <li class="th-tool-menu-item-green-bkg li_pen"
+                    data-action="showNoteItemDlg"
+                    data-template-dlg="note-hub-dlg-note-item"
+                    data-tip="Add note"
+                    title="Add note">
+                </li>
+            </ul>
+            <div class="light-gray-line-2"></div>
+            <div class="th-title">NOTES</div>
+            <div class="sub-title">don't forget your idea</div>
+            <hr>
+        </div>
+
+        <div class="search-notes">
+            <input id='input-search-notes' placeholder="Search for your notes... " type="text" />
+            <!--<span class="th-glyph li_search" id="btn-input-search-notes" title="Search note"></span>-->
+            <span class="th-circle-btn" id="btn-input-search-notes" title="Search note"></span>
+            <hr>
+        </div>
+
+        <div class="note-list">
+
+            <ul id='note-list-view-ctrl' class="black-frg" ></ul>
+
+        </div>
+
+        <div class="th-footer green-bkg">
+            <div class="footer-tool-tip">welcome to note-hub</div>
+        </div>
+
+        <div class="note-hub-dlg-note-item invisible-item"></div>
+
+        <div class="note-hub-dlg-feedback invisible-item"></div>
+
+        <div class="note-hub-dlg-info invisible-item"></div>
+
+        <div class="note-hub-dlg-settings invisible-item"></div>
+
+    </div>
+
+</div>
+
